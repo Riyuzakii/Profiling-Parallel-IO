@@ -1,0 +1,9 @@
+#node
+export DXT_ENABLE_IO_TRACE=1
+
+mpirun -n 32 -hostfile ../../hostfile ./ior -t 1m -b 16m -s 16 -F -C -c -a=MPIIO
+
+#Lancelot
+scp to Lancelot
+~/6th-Sem/CS633/darshan-3.1.7/darshan-util/darshan-dxt-parser raditya_ior_id7005_3-12-47612-4088625766688227622_1.darshan > mpirun_parsed_5_8nodes_dxt
+python ~/6th-Sem/CS633/darshan-3.1.7/darshan-util/dxt_analyzer.py -i mpirun_parsed_5_8nodes_dxt --read

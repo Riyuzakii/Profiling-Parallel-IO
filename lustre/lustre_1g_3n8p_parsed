@@ -1,0 +1,2259 @@
+# darshan log version: 3.10
+# compression method: ZLIB
+# exe: ../ior-master/src/ior -t 1g -b 1g -s 16 -F -C -c -a=MPIIO
+# uid: 22886
+# jobid: 92807
+# start_time: 1552490309
+# start_time_asci: Wed Mar 13 20:48:29 2019
+# end_time: 1552490833
+# end_time_asci: Wed Mar 13 20:57:13 2019
+# nprocs: 24
+# run time: 525
+# metadata: lib_ver = 3.1.7
+# metadata: h = romio_no_indep_rw=true;cb_nodes=4
+
+# log file regions
+# -------------------------------------------------------
+# header: 360 bytes (uncompressed)
+# job data: 269 bytes (compressed)
+# record table: 1772 bytes (compressed)
+# POSIX module: 5293 bytes (compressed), ver=4
+# MPI-IO module: 4579 bytes (compressed), ver=3
+# LUSTRE module: 1060 bytes (compressed), ver=1
+# STDIO module: 60 bytes (compressed), ver=2
+# DXT_POSIX module: 11442 bytes (compressed), ver=1
+# DXT_MPIIO module: 9311 bytes (compressed), ver=1
+
+# mounted file systems (mount point and fs type)
+# -------------------------------------------------------
+# mount entry:	/proc/sys/fs/binfmt_misc	autofs
+# mount entry:	/opt/extra_software	nfs
+# mount entry:	/sys/kernel/config	configfs
+# mount entry:	/sys/fs/pstore	pstore
+# mount entry:	/dev/mqueue	mqueue
+# mount entry:	/ipathfs	ipathfs
+# mount entry:	/scratch	lustre
+# mount entry:	/boot	xfs
+# mount entry:	/home	lustre
+# mount entry:	/dev	devtmpfs
+# mount entry:	/opt	xfs
+# mount entry:	/var	xfs
+# mount entry:	/tmp	xfs
+# mount entry:	/	rootfs
+# mount entry:	/	xfs
+
+# ***************************************************
+# DXT_POSIX module data
+# ***************************************************
+
+# DXT, file_id: 6617333809683356553, file_name: /home/raditya/Feb12/project/testFile.00000000
+# DXT, rank: 0, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       0  write        0               0      1073741824      3.8681     25.2467  [ 15]
+ X_POSIX       0  write        1      1073741824      1073741824     25.2575     61.8556  [ 15]
+ X_POSIX       0  write        2      2147483648      1073741824     61.8581     82.6266  [ 15]
+ X_POSIX       0  write        3      3221225472      1073741824     82.6305    105.8226  [ 15]
+ X_POSIX       0  write        4      4294967296      1073741824    105.8278    130.3082  [ 15]
+ X_POSIX       0  write        5      5368709120      1073741824    130.3090    152.1558  [ 15]
+ X_POSIX       0  write        6      6442450944      1073741824    152.1602    165.0951  [ 15]
+ X_POSIX       0  write        7      7516192768      1073741824    165.0964    174.5240  [ 15]
+ X_POSIX       0  write        8      8589934592      1073741824    174.5262    182.9824  [ 15]
+ X_POSIX       0  write        9      9663676416      1073741824    182.9832    195.7231  [ 15]
+ X_POSIX       0  write       10     10737418240      1073741824    195.7241    207.1692  [ 15]
+ X_POSIX       0  write       11     11811160064      1073741824    207.1734    213.2038  [ 15]
+ X_POSIX       0  write       12     12884901888      1073741824    213.2065    217.1609  [ 15]
+ X_POSIX       0  write       13     13958643712      1073741824    217.1655    221.1732  [ 15]
+ X_POSIX       0  write       14     15032385536      1073741824    221.1786    224.9544  [ 15]
+ X_POSIX       0  write       15     16106127360      1073741824    224.9590    228.9794  [ 15]
+
+# DXT, file_id: 7662040658127752710, file_name: /home/raditya/Feb12/project/testFile.00000008
+# DXT, rank: 0, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 12
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       0   read        0               0      1073741824    232.9581    246.5798  [ 12]
+ X_POSIX       0   read        1      1073741824      1073741824    246.5805    258.0335  [ 12]
+ X_POSIX       0   read        2      2147483648      1073741824    258.0342    270.0057  [ 12]
+ X_POSIX       0   read        3      3221225472      1073741824    270.0064    281.9504  [ 12]
+ X_POSIX       0   read        4      4294967296      1073741824    281.9512    294.0432  [ 12]
+ X_POSIX       0   read        5      5368709120      1073741824    294.0438    306.1979  [ 12]
+ X_POSIX       0   read        6      6442450944      1073741824    306.1990    317.9564  [ 12]
+ X_POSIX       0   read        7      7516192768      1073741824    317.9580    330.3950  [ 12]
+ X_POSIX       0   read        8      8589934592      1073741824    330.3958    342.1232  [ 12]
+ X_POSIX       0   read        9      9663676416      1073741824    342.1242    353.7920  [ 12]
+ X_POSIX       0   read       10     10737418240      1073741824    353.9475    366.1408  [ 12]
+ X_POSIX       0   read       11     11811160064      1073741824    366.1415    377.5192  [ 12]
+ X_POSIX       0   read       12     12884901888      1073741824    377.6877    389.4613  [ 12]
+ X_POSIX       0   read       13     13958643712      1073741824    389.4623    401.0324  [ 12]
+ X_POSIX       0   read       14     15032385536      1073741824    401.0333    412.3601  [ 12]
+ X_POSIX       0   read       15     16106127360      1073741824    412.3625    422.9904  [ 12]
+
+# DXT, file_id: 4485515842888025625, file_name: /home/raditya/Feb12/project/testFile.00000001
+# DXT, rank: 1, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 20
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       1  write        0               0      1073741824      3.8700     14.7154  [ 20]
+ X_POSIX       1  write        1      1073741824      1073741824     14.7190     25.0341  [ 20]
+ X_POSIX       1  write        2      2147483648      1073741824     25.0441     35.1488  [ 20]
+ X_POSIX       1  write        3      3221225472      1073741824     35.1523     45.5990  [ 20]
+ X_POSIX       1  write        4      4294967296      1073741824     45.5997     57.2591  [ 20]
+ X_POSIX       1  write        5      5368709120      1073741824     57.2599     67.8213  [ 20]
+ X_POSIX       1  write        6      6442450944      1073741824     67.8312     79.1990  [ 20]
+ X_POSIX       1  write        7      7516192768      1073741824     79.2029     88.3435  [ 20]
+ X_POSIX       1  write        8      8589934592      1073741824     88.3503     96.4779  [ 20]
+ X_POSIX       1  write        9      9663676416      1073741824     96.4788    103.3133  [ 20]
+ X_POSIX       1  write       10     10737418240      1073741824    103.3155    108.3728  [ 20]
+ X_POSIX       1  write       11     11811160064      1073741824    108.3777    113.4577  [ 20]
+ X_POSIX       1  write       12     12884901888      1073741824    113.4614    118.7103  [ 20]
+ X_POSIX       1  write       13     13958643712      1073741824    118.7114    124.6870  [ 20]
+ X_POSIX       1  write       14     15032385536      1073741824    124.6916    130.6050  [ 20]
+ X_POSIX       1  write       15     16106127360      1073741824    130.6060    136.0056  [ 20]
+
+# DXT, file_id: 13366175577126266022, file_name: /home/raditya/Feb12/project/testFile.00000009
+# DXT, rank: 1, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 6
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       1   read        0               0      1073741824    232.9587    247.9131  [  6]
+ X_POSIX       1   read        1      1073741824      1073741824    247.9139    261.4541  [  6]
+ X_POSIX       1   read        2      2147483648      1073741824    261.4574    274.7399  [  6]
+ X_POSIX       1   read        3      3221225472      1073741824    274.7408    289.1714  [  6]
+ X_POSIX       1   read        4      4294967296      1073741824    289.1723    302.5842  [  6]
+ X_POSIX       1   read        5      5368709120      1073741824    302.5851    317.1952  [  6]
+ X_POSIX       1   read        6      6442450944      1073741824    317.1973    330.4839  [  6]
+ X_POSIX       1   read        7      7516192768      1073741824    330.4848    344.5313  [  6]
+ X_POSIX       1   read        8      8589934592      1073741824    344.5406    358.6321  [  6]
+ X_POSIX       1   read        9      9663676416      1073741824    358.6328    372.7923  [  6]
+ X_POSIX       1   read       10     10737418240      1073741824    372.7931    386.4215  [  6]
+ X_POSIX       1   read       11     11811160064      1073741824    386.4224    399.3909  [  6]
+ X_POSIX       1   read       12     12884901888      1073741824    399.3916    413.0497  [  6]
+ X_POSIX       1   read       13     13958643712      1073741824    413.0504    425.2583  [  6]
+ X_POSIX       1   read       14     15032385536      1073741824    425.2609    434.7731  [  6]
+ X_POSIX       1   read       15     16106127360      1073741824    434.7738    442.4608  [  6]
+
+# DXT, file_id: 2239383483592625774, file_name: /home/raditya/Feb12/project/testFile.00000002
+# DXT, rank: 2, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       2  write        0               0      1073741824      3.8535     14.9483  [ 15]
+ X_POSIX       2  write        1      1073741824      1073741824     14.9535     28.8752  [ 15]
+ X_POSIX       2  write        2      2147483648      1073741824     28.8786     53.8662  [ 15]
+ X_POSIX       2  write        3      3221225472      1073741824     53.8731     65.2800  [ 15]
+ X_POSIX       2  write        4      4294967296      1073741824     65.2923     77.7437  [ 15]
+ X_POSIX       2  write        5      5368709120      1073741824     77.7480     87.4107  [ 15]
+ X_POSIX       2  write        6      6442450944      1073741824     87.4210    103.1502  [ 15]
+ X_POSIX       2  write        7      7516192768      1073741824    103.1510    116.6725  [ 15]
+ X_POSIX       2  write        8      8589934592      1073741824    116.6796    146.7490  [ 15]
+ X_POSIX       2  write        9      9663676416      1073741824    146.7510    158.4245  [ 15]
+ X_POSIX       2  write       10     10737418240      1073741824    158.4257    166.8363  [ 15]
+ X_POSIX       2  write       11     11811160064      1073741824    166.8375    175.0526  [ 15]
+ X_POSIX       2  write       12     12884901888      1073741824    175.0583    182.6111  [ 15]
+ X_POSIX       2  write       13     13958643712      1073741824    182.6137    194.0972  [ 15]
+ X_POSIX       2  write       14     15032385536      1073741824    194.1012    200.8413  [ 15]
+ X_POSIX       2  write       15     16106127360      1073741824    200.8426    211.3879  [ 15]
+
+# DXT, file_id: 3153800783731232617, file_name: /home/raditya/Feb12/project/testFile.00000010
+# DXT, rank: 2, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       2   read        0               0      1073741824    233.0292    253.8768  [ 15]
+ X_POSIX       2   read        1      1073741824      1073741824    253.8775    273.1314  [ 15]
+ X_POSIX       2   read        2      2147483648      1073741824    273.1320    292.0010  [ 15]
+ X_POSIX       2   read        3      3221225472      1073741824    292.0019    310.9408  [ 15]
+ X_POSIX       2   read        4      4294967296      1073741824    310.9415    330.1650  [ 15]
+ X_POSIX       2   read        5      5368709120      1073741824    330.1658    348.7647  [ 15]
+ X_POSIX       2   read        6      6442450944      1073741824    348.7660    367.9182  [ 15]
+ X_POSIX       2   read        7      7516192768      1073741824    367.9224    386.6262  [ 15]
+ X_POSIX       2   read        8      8589934592      1073741824    386.6270    405.2564  [ 15]
+ X_POSIX       2   read        9      9663676416      1073741824    405.2599    423.4285  [ 15]
+ X_POSIX       2   read       10     10737418240      1073741824    423.4291    441.9225  [ 15]
+ X_POSIX       2   read       11     11811160064      1073741824    441.9234    455.8930  [ 15]
+ X_POSIX       2   read       12     12884901888      1073741824    455.8963    468.1962  [ 15]
+ X_POSIX       2   read       13     13958643712      1073741824    468.1973    480.6760  [ 15]
+ X_POSIX       2   read       14     15032385536      1073741824    480.6777    489.7330  [ 15]
+ X_POSIX       2   read       15     16106127360      1073741824    489.7337    499.7377  [ 15]
+
+# DXT, file_id: 11030528003214951808, file_name: /home/raditya/Feb12/project/testFile.00000003
+# DXT, rank: 3, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 11
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       3  write        0               0      1073741824      3.8543      8.1674  [ 11]
+ X_POSIX       3  write        1      1073741824      1073741824      8.1692     12.4080  [ 11]
+ X_POSIX       3  write        2      2147483648      1073741824     12.4095     17.2248  [ 11]
+ X_POSIX       3  write        3      3221225472      1073741824     17.2298     21.7240  [ 11]
+ X_POSIX       3  write        4      4294967296      1073741824     21.7325     26.4169  [ 11]
+ X_POSIX       3  write        5      5368709120      1073741824     26.4192     30.7916  [ 11]
+ X_POSIX       3  write        6      6442450944      1073741824     30.7957     34.9757  [ 11]
+ X_POSIX       3  write        7      7516192768      1073741824     34.9823     39.8581  [ 11]
+ X_POSIX       3  write        8      8589934592      1073741824     39.8621     44.4284  [ 11]
+ X_POSIX       3  write        9      9663676416      1073741824     44.4338     49.1198  [ 11]
+ X_POSIX       3  write       10     10737418240      1073741824     49.1285     53.2568  [ 11]
+ X_POSIX       3  write       11     11811160064      1073741824     53.2612     57.6958  [ 11]
+ X_POSIX       3  write       12     12884901888      1073741824     57.6985     62.6151  [ 11]
+ X_POSIX       3  write       13     13958643712      1073741824     62.6160     68.0057  [ 11]
+ X_POSIX       3  write       14     15032385536      1073741824     68.0073     72.8937  [ 11]
+ X_POSIX       3  write       15     16106127360      1073741824     72.9064     77.7796  [ 11]
+
+# DXT, file_id: 11225106729379473008, file_name: /home/raditya/Feb12/project/testFile.00000011
+# DXT, rank: 3, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 6
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       3   read        0               0      1073741824    233.0122    247.9679  [  6]
+ X_POSIX       3   read        1      1073741824      1073741824    247.9688    260.8528  [  6]
+ X_POSIX       3   read        2      2147483648      1073741824    260.8537    273.8093  [  6]
+ X_POSIX       3   read        3      3221225472      1073741824    274.1513    287.9993  [  6]
+ X_POSIX       3   read        4      4294967296      1073741824    288.0027    301.0307  [  6]
+ X_POSIX       3   read        5      5368709120      1073741824    301.0346    315.3780  [  6]
+ X_POSIX       3   read        6      6442450944      1073741824    315.3840    328.6376  [  6]
+ X_POSIX       3   read        7      7516192768      1073741824    328.6405    342.1457  [  6]
+ X_POSIX       3   read        8      8589934592      1073741824    342.1466    356.0650  [  6]
+ X_POSIX       3   read        9      9663676416      1073741824    356.0705    369.0724  [  6]
+ X_POSIX       3   read       10     10737418240      1073741824    369.0746    381.6004  [  6]
+ X_POSIX       3   read       11     11811160064      1073741824    381.6015    394.9561  [  6]
+ X_POSIX       3   read       12     12884901888      1073741824    394.9569    408.4443  [  6]
+ X_POSIX       3   read       13     13958643712      1073741824    408.4452    421.8571  [  6]
+ X_POSIX       3   read       14     15032385536      1073741824    421.8579    432.2484  [  6]
+ X_POSIX       3   read       15     16106127360      1073741824    432.2493    440.3375  [  6]
+
+# DXT, file_id: 4594336861342540954, file_name: /home/raditya/Feb12/project/testFile.00000004
+# DXT, rank: 4, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 0
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       4  write        0               0      1073741824      3.8545      9.9953  [  0]
+ X_POSIX       4  write        1      1073741824      1073741824     10.0018     16.3577  [  0]
+ X_POSIX       4  write        2      2147483648      1073741824     16.3597     22.2546  [  0]
+ X_POSIX       4  write        3      3221225472      1073741824     22.2568     28.9087  [  0]
+ X_POSIX       4  write        4      4294967296      1073741824     28.9130     34.4548  [  0]
+ X_POSIX       4  write        5      5368709120      1073741824     34.4582     40.2452  [  0]
+ X_POSIX       4  write        6      6442450944      1073741824     40.2460     46.2017  [  0]
+ X_POSIX       4  write        7      7516192768      1073741824     46.2070     52.5469  [  0]
+ X_POSIX       4  write        8      8589934592      1073741824     52.5481     59.4266  [  0]
+ X_POSIX       4  write        9      9663676416      1073741824     59.4364     65.8246  [  0]
+ X_POSIX       4  write       10     10737418240      1073741824     65.8263     71.9974  [  0]
+ X_POSIX       4  write       11     11811160064      1073741824     72.0001     78.5572  [  0]
+ X_POSIX       4  write       12     12884901888      1073741824     78.5582     84.2195  [  0]
+ X_POSIX       4  write       13     13958643712      1073741824     84.2209     89.9778  [  0]
+ X_POSIX       4  write       14     15032385536      1073741824     89.9832     95.3461  [  0]
+ X_POSIX       4  write       15     16106127360      1073741824     95.3485    101.1882  [  0]
+
+# DXT, file_id: 16752825045268591791, file_name: /home/raditya/Feb12/project/testFile.00000012
+# DXT, rank: 4, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 16
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       4   read        0               0      1073741824    232.9573    248.2959  [ 16]
+ X_POSIX       4   read        1      1073741824      1073741824    248.2996    261.3561  [ 16]
+ X_POSIX       4   read        2      2147483648      1073741824    261.3568    275.7613  [ 16]
+ X_POSIX       4   read        3      3221225472      1073741824    275.7620    288.7383  [ 16]
+ X_POSIX       4   read        4      4294967296      1073741824    288.7423    302.2789  [ 16]
+ X_POSIX       4   read        5      5368709120      1073741824    302.2804    316.8954  [ 16]
+ X_POSIX       4   read        6      6442450944      1073741824    316.8964    330.7205  [ 16]
+ X_POSIX       4   read        7      7516192768      1073741824    330.7214    344.9699  [ 16]
+ X_POSIX       4   read        8      8589934592      1073741824    344.9707    358.5935  [ 16]
+ X_POSIX       4   read        9      9663676416      1073741824    358.5943    372.4177  [ 16]
+ X_POSIX       4   read       10     10737418240      1073741824    372.4184    385.7328  [ 16]
+ X_POSIX       4   read       11     11811160064      1073741824    385.8523    399.7109  [ 16]
+ X_POSIX       4   read       12     12884901888      1073741824    399.7118    412.9854  [ 16]
+ X_POSIX       4   read       13     13958643712      1073741824    412.9952    425.1328  [ 16]
+ X_POSIX       4   read       14     15032385536      1073741824    425.1342    434.8573  [ 16]
+ X_POSIX       4   read       15     16106127360      1073741824    434.8584    443.3478  [ 16]
+
+# DXT, file_id: 8291793450924322731, file_name: /home/raditya/Feb12/project/testFile.00000005
+# DXT, rank: 5, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       5  write        0               0      1073741824      3.8538     18.5999  [ 15]
+ X_POSIX       5  write        1      1073741824      1073741824     18.6049     47.7838  [ 15]
+ X_POSIX       5  write        2      2147483648      1073741824     47.7886     62.2355  [ 15]
+ X_POSIX       5  write        3      3221225472      1073741824     62.2436     77.4764  [ 15]
+ X_POSIX       5  write        4      4294967296      1073741824     77.4905     91.0486  [ 15]
+ X_POSIX       5  write        5      5368709120      1073741824     91.0514    112.5631  [ 15]
+ X_POSIX       5  write        6      6442450944      1073741824    112.5676    147.6168  [ 15]
+ X_POSIX       5  write        7      7516192768      1073741824    147.6185    164.6026  [ 15]
+ X_POSIX       5  write        8      8589934592      1073741824    164.6051    177.8991  [ 15]
+ X_POSIX       5  write        9      9663676416      1073741824    177.9013    194.9196  [ 15]
+ X_POSIX       5  write       10     10737418240      1073741824    194.9213    210.4882  [ 15]
+ X_POSIX       5  write       11     11811160064      1073741824    210.4893    216.4272  [ 15]
+ X_POSIX       5  write       12     12884901888      1073741824    216.4314    221.8837  [ 15]
+ X_POSIX       5  write       13     13958643712      1073741824    221.8875    227.4543  [ 15]
+ X_POSIX       5  write       14     15032385536      1073741824    227.4567    230.6059  [ 15]
+ X_POSIX       5  write       15     16106127360      1073741824    230.6068    232.9464  [ 15]
+
+# DXT, file_id: 10015593471693893441, file_name: /home/raditya/Feb12/project/testFile.00000013
+# DXT, rank: 5, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 3
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       5   read        0               0      1073741824    232.9982    248.0293  [  3]
+ X_POSIX       5   read        1      1073741824      1073741824    248.0304    261.6181  [  3]
+ X_POSIX       5   read        2      2147483648      1073741824    261.6188    275.2877  [  3]
+ X_POSIX       5   read        3      3221225472      1073741824    275.2946    288.5949  [  3]
+ X_POSIX       5   read        4      4294967296      1073741824    288.5957    301.5178  [  3]
+ X_POSIX       5   read        5      5368709120      1073741824    301.5187    314.4801  [  3]
+ X_POSIX       5   read        6      6442450944      1073741824    314.5366    327.7756  [  3]
+ X_POSIX       5   read        7      7516192768      1073741824    327.9081    341.1877  [  3]
+ X_POSIX       5   read        8      8589934592      1073741824    341.1887    354.1426  [  3]
+ X_POSIX       5   read        9      9663676416      1073741824    354.1457    367.2387  [  3]
+ X_POSIX       5   read       10     10737418240      1073741824    367.2399    381.2857  [  3]
+ X_POSIX       5   read       11     11811160064      1073741824    381.2869    394.9062  [  3]
+ X_POSIX       5   read       12     12884901888      1073741824    394.9092    408.3653  [  3]
+ X_POSIX       5   read       13     13958643712      1073741824    408.3715    421.0995  [  3]
+ X_POSIX       5   read       14     15032385536      1073741824    421.1005    433.5785  [  3]
+ X_POSIX       5   read       15     16106127360      1073741824    433.5794    444.5444  [  3]
+
+# DXT, file_id: 13500644276017873973, file_name: /home/raditya/Feb12/project/testFile.00000006
+# DXT, rank: 6, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 20
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       6  write        0               0      1073741824      3.8531     16.9781  [ 20]
+ X_POSIX       6  write        1      1073741824      1073741824     16.9848     30.4423  [ 20]
+ X_POSIX       6  write        2      2147483648      1073741824     30.4464     43.3789  [ 20]
+ X_POSIX       6  write        3      3221225472      1073741824     43.3796     57.4457  [ 20]
+ X_POSIX       6  write        4      4294967296      1073741824     57.4480     71.0958  [ 20]
+ X_POSIX       6  write        5      5368709120      1073741824     71.1046     84.4008  [ 20]
+ X_POSIX       6  write        6      6442450944      1073741824     84.4131     95.7316  [ 20]
+ X_POSIX       6  write        7      7516192768      1073741824     95.7375    103.6913  [ 20]
+ X_POSIX       6  write        8      8589934592      1073741824    103.6928    109.5791  [ 20]
+ X_POSIX       6  write        9      9663676416      1073741824    109.5833    115.5588  [ 20]
+ X_POSIX       6  write       10     10737418240      1073741824    115.5628    122.1490  [ 20]
+ X_POSIX       6  write       11     11811160064      1073741824    122.1501    128.6828  [ 20]
+ X_POSIX       6  write       12     12884901888      1073741824    128.6834    135.0250  [ 20]
+ X_POSIX       6  write       13     13958643712      1073741824    135.0261    138.4503  [ 20]
+ X_POSIX       6  write       14     15032385536      1073741824    138.4511    142.2608  [ 20]
+ X_POSIX       6  write       15     16106127360      1073741824    142.2633    145.3860  [ 20]
+
+# DXT, file_id: 13704465515730605806, file_name: /home/raditya/Feb12/project/testFile.00000014
+# DXT, rank: 6, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       6   read        0               0      1073741824    232.9584    251.1263  [ 15]
+ X_POSIX       6   read        1      1073741824      1073741824    251.1270    270.3835  [ 15]
+ X_POSIX       6   read        2      2147483648      1073741824    270.3849    290.1842  [ 15]
+ X_POSIX       6   read        3      3221225472      1073741824    290.1851    308.9542  [ 15]
+ X_POSIX       6   read        4      4294967296      1073741824    308.9550    327.7738  [ 15]
+ X_POSIX       6   read        5      5368709120      1073741824    327.9131    346.8959  [ 15]
+ X_POSIX       6   read        6      6442450944      1073741824    346.8967    365.3169  [ 15]
+ X_POSIX       6   read        7      7516192768      1073741824    365.3175    384.7157  [ 15]
+ X_POSIX       6   read        8      8589934592      1073741824    384.7166    404.3751  [ 15]
+ X_POSIX       6   read        9      9663676416      1073741824    404.3762    423.5986  [ 15]
+ X_POSIX       6   read       10     10737418240      1073741824    423.5993    442.6161  [ 15]
+ X_POSIX       6   read       11     11811160064      1073741824    442.6171    456.1567  [ 15]
+ X_POSIX       6   read       12     12884901888      1073741824    456.1580    470.3406  [ 15]
+ X_POSIX       6   read       13     13958643712      1073741824    470.3416    481.2207  [ 15]
+ X_POSIX       6   read       14     15032385536      1073741824    481.2215    492.4393  [ 15]
+ X_POSIX       6   read       15     16106127360      1073741824    492.4415    501.1981  [ 15]
+
+# DXT, file_id: 13901290699237556864, file_name: /home/raditya/Feb12/project/testFile.00000007
+# DXT, rank: 7, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 2
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       7  write        0               0      1073741824      3.8810     10.1752  [  2]
+ X_POSIX       7  write        1      1073741824      1073741824     10.1810     16.6327  [  2]
+ X_POSIX       7  write        2      2147483648      1073741824     16.6343     22.5579  [  2]
+ X_POSIX       7  write        3      3221225472      1073741824     22.5587     29.2941  [  2]
+ X_POSIX       7  write        4      4294967296      1073741824     29.2949     34.9260  [  2]
+ X_POSIX       7  write        5      5368709120      1073741824     34.9276     40.6524  [  2]
+ X_POSIX       7  write        6      6442450944      1073741824     40.6581     46.9471  [  2]
+ X_POSIX       7  write        7      7516192768      1073741824     46.9481     53.5898  [  2]
+ X_POSIX       7  write        8      8589934592      1073741824     53.5910     60.0307  [  2]
+ X_POSIX       7  write        9      9663676416      1073741824     60.0419     66.5965  [  2]
+ X_POSIX       7  write       10     10737418240      1073741824     66.5992     72.9083  [  2]
+ X_POSIX       7  write       11     11811160064      1073741824     72.9202     79.4761  [  2]
+ X_POSIX       7  write       12     12884901888      1073741824     79.4793     85.0140  [  2]
+ X_POSIX       7  write       13     13958643712      1073741824     85.0179     90.8010  [  2]
+ X_POSIX       7  write       14     15032385536      1073741824     90.8021     95.9881  [  2]
+ X_POSIX       7  write       15     16106127360      1073741824     95.9893    101.1930  [  2]
+
+# DXT, file_id: 136429942037111526, file_name: /home/raditya/Feb12/project/testFile.00000015
+# DXT, rank: 7, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 21
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       7   read        0               0      1073741824    232.9583    248.0769  [ 21]
+ X_POSIX       7   read        1      1073741824      1073741824    248.0841    262.1398  [ 21]
+ X_POSIX       7   read        2      2147483648      1073741824    262.1429    274.9597  [ 21]
+ X_POSIX       7   read        3      3221225472      1073741824    274.9609    288.7441  [ 21]
+ X_POSIX       7   read        4      4294967296      1073741824    288.7483    302.0028  [ 21]
+ X_POSIX       7   read        5      5368709120      1073741824    302.0036    314.8902  [ 21]
+ X_POSIX       7   read        6      6442450944      1073741824    314.8933    328.6658  [ 21]
+ X_POSIX       7   read        7      7516192768      1073741824    328.6724    342.1267  [ 21]
+ X_POSIX       7   read        8      8589934592      1073741824    342.1272    355.0470  [ 21]
+ X_POSIX       7   read        9      9663676416      1073741824    355.0480    368.9845  [ 21]
+ X_POSIX       7   read       10     10737418240      1073741824    368.9969    381.7008  [ 21]
+ X_POSIX       7   read       11     11811160064      1073741824    381.7020    395.0949  [ 21]
+ X_POSIX       7   read       12     12884901888      1073741824    395.0958    408.0405  [ 21]
+ X_POSIX       7   read       13     13958643712      1073741824    408.0413    420.3697  [ 21]
+ X_POSIX       7   read       14     15032385536      1073741824    420.4049    433.1570  [ 21]
+ X_POSIX       7   read       15     16106127360      1073741824    433.1578    443.5760  [ 21]
+
+# DXT, file_id: 7662040658127752710, file_name: /home/raditya/Feb12/project/testFile.00000008
+# DXT, rank: 8, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 12
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       8  write        0               0      1073741824      3.8520     10.9657  [ 12]
+ X_POSIX       8  write        1      1073741824      1073741824     10.9674     17.2606  [ 12]
+ X_POSIX       8  write        2      2147483648      1073741824     17.2614     23.1429  [ 12]
+ X_POSIX       8  write        3      3221225472      1073741824     23.1450     29.7560  [ 12]
+ X_POSIX       8  write        4      4294967296      1073741824     29.7589     35.5568  [ 12]
+ X_POSIX       8  write        5      5368709120      1073741824     35.5636     40.7336  [ 12]
+ X_POSIX       8  write        6      6442450944      1073741824     40.7366     46.3828  [ 12]
+ X_POSIX       8  write        7      7516192768      1073741824     46.3849     52.1417  [ 12]
+ X_POSIX       8  write        8      8589934592      1073741824     52.3842     58.4324  [ 12]
+ X_POSIX       8  write        9      9663676416      1073741824     58.4395     64.6158  [ 12]
+ X_POSIX       8  write       10     10737418240      1073741824     64.6190     71.0327  [ 12]
+ X_POSIX       8  write       11     11811160064      1073741824     71.0340     77.3716  [ 12]
+ X_POSIX       8  write       12     12884901888      1073741824     77.5426     84.3279  [ 12]
+ X_POSIX       8  write       13     13958643712      1073741824     84.3286     90.3995  [ 12]
+ X_POSIX       8  write       14     15032385536      1073741824     90.4002     95.7414  [ 12]
+ X_POSIX       8  write       15     16106127360      1073741824     95.7422    100.0504  [ 12]
+
+# DXT, file_id: 1188025060045851439, file_name: /home/raditya/Feb12/project/testFile.00000016
+# DXT, rank: 8, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 3
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       8   read        0               0      1073741824    233.0114    248.3948  [  3]
+ X_POSIX       8   read        1      1073741824      1073741824    248.3955    263.5159  [  3]
+ X_POSIX       8   read        2      2147483648      1073741824    263.5168    278.1192  [  3]
+ X_POSIX       8   read        3      3221225472      1073741824    278.1204    291.6448  [  3]
+ X_POSIX       8   read        4      4294967296      1073741824    291.6456    305.6554  [  3]
+ X_POSIX       8   read        5      5368709120      1073741824    305.6566    319.8941  [  3]
+ X_POSIX       8   read        6      6442450944      1073741824    319.8950    333.8528  [  3]
+ X_POSIX       8   read        7      7516192768      1073741824    333.8536    348.4229  [  3]
+ X_POSIX       8   read        8      8589934592      1073741824    348.4237    361.4782  [  3]
+ X_POSIX       8   read        9      9663676416      1073741824    361.4790    375.0876  [  3]
+ X_POSIX       8   read       10     10737418240      1073741824    375.0898    389.1837  [  3]
+ X_POSIX       8   read       11     11811160064      1073741824    389.1845    403.0556  [  3]
+ X_POSIX       8   read       12     12884901888      1073741824    403.0564    415.6857  [  3]
+ X_POSIX       8   read       13     13958643712      1073741824    415.6865    427.1848  [  3]
+ X_POSIX       8   read       14     15032385536      1073741824    427.1855    436.4847  [  3]
+ X_POSIX       8   read       15     16106127360      1073741824    436.4855    445.2560  [  3]
+
+# DXT, file_id: 13366175577126266022, file_name: /home/raditya/Feb12/project/testFile.00000009
+# DXT, rank: 9, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 6
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       9  write        0               0      1073741824      3.8983     16.5682  [  6]
+ X_POSIX       9  write        1      1073741824      1073741824     16.5693     28.1491  [  6]
+ X_POSIX       9  write        2      2147483648      1073741824     28.1554     37.6499  [  6]
+ X_POSIX       9  write        3      3221225472      1073741824     37.6507     48.1931  [  6]
+ X_POSIX       9  write        4      4294967296      1073741824     48.1941     59.4999  [  6]
+ X_POSIX       9  write        5      5368709120      1073741824     59.5097     71.7065  [  6]
+ X_POSIX       9  write        6      6442450944      1073741824     71.7074     83.9310  [  6]
+ X_POSIX       9  write        7      7516192768      1073741824     83.9326     95.6120  [  6]
+ X_POSIX       9  write        8      8589934592      1073741824     95.7395    103.7907  [  6]
+ X_POSIX       9  write        9      9663676416      1073741824    103.7932    109.8035  [  6]
+ X_POSIX       9  write       10     10737418240      1073741824    109.8080    115.3973  [  6]
+ X_POSIX       9  write       11     11811160064      1073741824    115.3989    121.1525  [  6]
+ X_POSIX       9  write       12     12884901888      1073741824    121.1540    125.9141  [  6]
+ X_POSIX       9  write       13     13958643712      1073741824    125.9148    130.4201  [  6]
+ X_POSIX       9  write       14     15032385536      1073741824    130.4209    134.2953  [  6]
+ X_POSIX       9  write       15     16106127360      1073741824    134.2985    138.5114  [  6]
+
+# DXT, file_id: 4890807750635903759, file_name: /home/raditya/Feb12/project/testFile.00000017
+# DXT, rank: 9, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 0
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX       9   read        0               0      1073741824    232.9940    246.1578  [  0]
+ X_POSIX       9   read        1      1073741824      1073741824    246.1599    258.2144  [  0]
+ X_POSIX       9   read        2      2147483648      1073741824    258.2153    271.2936  [  0]
+ X_POSIX       9   read        3      3221225472      1073741824    271.4406    283.9725  [  0]
+ X_POSIX       9   read        4      4294967296      1073741824    283.9732    296.6910  [  0]
+ X_POSIX       9   read        5      5368709120      1073741824    296.6917    309.1380  [  0]
+ X_POSIX       9   read        6      6442450944      1073741824    309.2723    321.0110  [  0]
+ X_POSIX       9   read        7      7516192768      1073741824    321.0118    333.0607  [  0]
+ X_POSIX       9   read        8      8589934592      1073741824    333.0616    345.8137  [  0]
+ X_POSIX       9   read        9      9663676416      1073741824    346.0537    358.3145  [  0]
+ X_POSIX       9   read       10     10737418240      1073741824    358.3153    370.5613  [  0]
+ X_POSIX       9   read       11     11811160064      1073741824    370.5649    382.0490  [  0]
+ X_POSIX       9   read       12     12884901888      1073741824    382.0499    392.8606  [  0]
+ X_POSIX       9   read       13     13958643712      1073741824    392.8614    403.3407  [  0]
+ X_POSIX       9   read       14     15032385536      1073741824    403.3414    413.8091  [  0]
+ X_POSIX       9   read       15     16106127360      1073741824    413.8101    423.3307  [  0]
+
+# DXT, file_id: 3153800783731232617, file_name: /home/raditya/Feb12/project/testFile.00000010
+# DXT, rank: 10, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      10  write        0               0      1073741824      3.9028     19.6069  [ 15]
+ X_POSIX      10  write        1      1073741824      1073741824     19.6103     44.8769  [ 15]
+ X_POSIX      10  write        2      2147483648      1073741824     44.8827     61.9815  [ 15]
+ X_POSIX      10  write        3      3221225472      1073741824     61.9929     76.6065  [ 15]
+ X_POSIX      10  write        4      4294967296      1073741824     76.6089     90.0990  [ 15]
+ X_POSIX      10  write        5      5368709120      1073741824     90.1042    108.0741  [ 15]
+ X_POSIX      10  write        6      6442450944      1073741824    108.0759    121.5548  [ 15]
+ X_POSIX      10  write        7      7516192768      1073741824    121.5556    149.1078  [ 15]
+ X_POSIX      10  write        8      8589934592      1073741824    149.1088    162.4123  [ 15]
+ X_POSIX      10  write        9      9663676416      1073741824    162.4131    171.0259  [ 15]
+ X_POSIX      10  write       10     10737418240      1073741824    171.0274    179.4560  [ 15]
+ X_POSIX      10  write       11     11811160064      1073741824    179.4568    192.0189  [ 15]
+ X_POSIX      10  write       12     12884901888      1073741824    192.0196    197.3745  [ 15]
+ X_POSIX      10  write       13     13958643712      1073741824    197.3753    200.5413  [ 15]
+ X_POSIX      10  write       14     15032385536      1073741824    200.5433    206.9762  [ 15]
+ X_POSIX      10  write       15     16106127360      1073741824    206.9771    210.8528  [ 15]
+
+# DXT, file_id: 8976206395720837126, file_name: /home/raditya/Feb12/project/testFile.00000018
+# DXT, rank: 10, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 8
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      10   read        0               0      1073741824    233.0111    244.9218  [  8]
+ X_POSIX      10   read        1      1073741824      1073741824    244.9229    254.3075  [  8]
+ X_POSIX      10   read        2      2147483648      1073741824    254.3083    263.8250  [  8]
+ X_POSIX      10   read        3      3221225472      1073741824    263.8262    273.6553  [  8]
+ X_POSIX      10   read        4      4294967296      1073741824    273.6559    283.3811  [  8]
+ X_POSIX      10   read        5      5368709120      1073741824    283.3818    293.4308  [  8]
+ X_POSIX      10   read        6      6442450944      1073741824    293.4316    302.7873  [  8]
+ X_POSIX      10   read        7      7516192768      1073741824    302.7881    313.1314  [  8]
+ X_POSIX      10   read        8      8589934592      1073741824    313.1322    322.8326  [  8]
+ X_POSIX      10   read        9      9663676416      1073741824    322.8341    332.6152  [  8]
+ X_POSIX      10   read       10     10737418240      1073741824    332.6191    342.0936  [  8]
+ X_POSIX      10   read       11     11811160064      1073741824    342.0943    351.8241  [  8]
+ X_POSIX      10   read       12     12884901888      1073741824    351.8250    361.4787  [  8]
+ X_POSIX      10   read       13     13958643712      1073741824    361.4792    370.8719  [  8]
+ X_POSIX      10   read       14     15032385536      1073741824    370.8726    380.6545  [  8]
+ X_POSIX      10   read       15     16106127360      1073741824    380.6618    390.7018  [  8]
+
+# DXT, file_id: 11225106729379473008, file_name: /home/raditya/Feb12/project/testFile.00000011
+# DXT, rank: 11, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 6
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      11  write        0               0      1073741824      3.9076     16.2236  [  6]
+ X_POSIX      11  write        1      1073741824      1073741824     16.2255     27.5539  [  6]
+ X_POSIX      11  write        2      2147483648      1073741824     27.5586     37.3243  [  6]
+ X_POSIX      11  write        3      3221225472      1073741824     37.3291     48.0222  [  6]
+ X_POSIX      11  write        4      4294967296      1073741824     48.0240     59.1447  [  6]
+ X_POSIX      11  write        5      5368709120      1073741824     59.1509     71.3464  [  6]
+ X_POSIX      11  write        6      6442450944      1073741824     71.3477     83.9779  [  6]
+ X_POSIX      11  write        7      7516192768      1073741824     83.9800     95.5345  [  6]
+ X_POSIX      11  write        8      8589934592      1073741824     95.5406    103.7635  [  6]
+ X_POSIX      11  write        9      9663676416      1073741824    103.7647    109.7336  [  6]
+ X_POSIX      11  write       10     10737418240      1073741824    109.7349    115.7723  [  6]
+ X_POSIX      11  write       11     11811160064      1073741824    115.7735    121.7030  [  6]
+ X_POSIX      11  write       12     12884901888      1073741824    121.7040    126.7338  [  6]
+ X_POSIX      11  write       13     13958643712      1073741824    126.7348    131.0628  [  6]
+ X_POSIX      11  write       14     15032385536      1073741824    131.0643    135.3579  [  6]
+ X_POSIX      11  write       15     16106127360      1073741824    135.3587    139.0750  [  6]
+
+# DXT, file_id: 4417402811538315834, file_name: /home/raditya/Feb12/project/testFile.00000019
+# DXT, rank: 11, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 21
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      11   read        0               0      1073741824    232.9575    247.5551  [ 21]
+ X_POSIX      11   read        1      1073741824      1073741824    247.5564    262.8245  [ 21]
+ X_POSIX      11   read        2      2147483648      1073741824    262.8259    278.7884  [ 21]
+ X_POSIX      11   read        3      3221225472      1073741824    278.7895    294.5139  [ 21]
+ X_POSIX      11   read        4      4294967296      1073741824    294.5154    310.0369  [ 21]
+ X_POSIX      11   read        5      5368709120      1073741824    310.0376    325.3143  [ 21]
+ X_POSIX      11   read        6      6442450944      1073741824    325.3152    340.7974  [ 21]
+ X_POSIX      11   read        7      7516192768      1073741824    340.7981    356.1501  [ 21]
+ X_POSIX      11   read        8      8589934592      1073741824    356.1507    372.5154  [ 21]
+ X_POSIX      11   read        9      9663676416      1073741824    372.5201    388.3373  [ 21]
+ X_POSIX      11   read       10     10737418240      1073741824    388.3394    404.6480  [ 21]
+ X_POSIX      11   read       11     11811160064      1073741824    404.6493    418.5577  [ 21]
+ X_POSIX      11   read       12     12884901888      1073741824    418.5583    432.5879  [ 21]
+ X_POSIX      11   read       13     13958643712      1073741824    432.5884    444.1675  [ 21]
+ X_POSIX      11   read       14     15032385536      1073741824    444.1680    452.8662  [ 21]
+ X_POSIX      11   read       15     16106127360      1073741824    452.8667    460.5044  [ 21]
+
+# DXT, file_id: 16752825045268591791, file_name: /home/raditya/Feb12/project/testFile.00000012
+# DXT, rank: 12, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 16
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      12  write        0               0      1073741824      3.9118     11.5903  [ 16]
+ X_POSIX      12  write        1      1073741824      1073741824     11.6088     19.1363  [ 16]
+ X_POSIX      12  write        2      2147483648      1073741824     19.1375     26.5551  [ 16]
+ X_POSIX      12  write        3      3221225472      1073741824     26.5613     40.9361  [ 16]
+ X_POSIX      12  write        4      4294967296      1073741824     40.9386     52.2966  [ 16]
+ X_POSIX      12  write        5      5368709120      1073741824     52.3823     59.1649  [ 16]
+ X_POSIX      12  write        6      6442450944      1073741824     59.1700     66.5656  [ 16]
+ X_POSIX      12  write        7      7516192768      1073741824     66.5819     73.9047  [ 16]
+ X_POSIX      12  write        8      8589934592      1073741824     74.0882     81.6432  [ 16]
+ X_POSIX      12  write        9      9663676416      1073741824     81.6488     89.5938  [ 16]
+ X_POSIX      12  write       10     10737418240      1073741824     89.5983     98.4621  [ 16]
+ X_POSIX      12  write       11     11811160064      1073741824     98.4739    107.0744  [ 16]
+ X_POSIX      12  write       12     12884901888      1073741824    107.0761    112.4838  [ 16]
+ X_POSIX      12  write       13     13958643712      1073741824    112.4844    117.7257  [ 16]
+ X_POSIX      12  write       14     15032385536      1073741824    117.7268    134.3295  [ 16]
+ X_POSIX      12  write       15     16106127360      1073741824    134.3340    145.1669  [ 16]
+
+# DXT, file_id: 12121164046966517267, file_name: /home/raditya/Feb12/project/testFile.00000020
+# DXT, rank: 12, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 21
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      12   read        0               0      1073741824    233.0320    250.5384  [ 21]
+ X_POSIX      12   read        1      1073741824      1073741824    250.5401    268.0697  [ 21]
+ X_POSIX      12   read        2      2147483648      1073741824    268.0716    285.3053  [ 21]
+ X_POSIX      12   read        3      3221225472      1073741824    285.3077    303.0015  [ 21]
+ X_POSIX      12   read        4      4294967296      1073741824    303.0029    320.7473  [ 21]
+ X_POSIX      12   read        5      5368709120      1073741824    320.7537    338.3961  [ 21]
+ X_POSIX      12   read        6      6442450944      1073741824    338.3975    354.7339  [ 21]
+ X_POSIX      12   read        7      7516192768      1073741824    354.7346    371.0264  [ 21]
+ X_POSIX      12   read        8      8589934592      1073741824    371.0284    387.1458  [ 21]
+ X_POSIX      12   read        9      9663676416      1073741824    387.1502    404.4791  [ 21]
+ X_POSIX      12   read       10     10737418240      1073741824    404.4799    421.8201  [ 21]
+ X_POSIX      12   read       11     11811160064      1073741824    421.8214    435.2107  [ 21]
+ X_POSIX      12   read       12     12884901888      1073741824    435.2421    446.2799  [ 21]
+ X_POSIX      12   read       13     13958643712      1073741824    446.2815    453.7005  [ 21]
+ X_POSIX      12   read       14     15032385536      1073741824    453.7023    460.8681  [ 21]
+ X_POSIX      12   read       15     16106127360      1073741824    460.8686    465.5561  [ 21]
+
+# DXT, file_id: 10015593471693893441, file_name: /home/raditya/Feb12/project/testFile.00000013
+# DXT, rank: 13, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 3
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      13  write        0               0      1073741824      3.9009     11.0305  [  3]
+ X_POSIX      13  write        1      1073741824      1073741824     11.0337     17.6486  [  3]
+ X_POSIX      13  write        2      2147483648      1073741824     17.6560     24.2580  [  3]
+ X_POSIX      13  write        3      3221225472      1073741824     24.2631     29.8575  [  3]
+ X_POSIX      13  write        4      4294967296      1073741824     29.8646     34.8632  [  3]
+ X_POSIX      13  write        5      5368709120      1073741824     34.8748     40.5217  [  3]
+ X_POSIX      13  write        6      6442450944      1073741824     40.5290     45.8061  [  3]
+ X_POSIX      13  write        7      7516192768      1073741824     45.8122     52.1268  [  3]
+ X_POSIX      13  write        8      8589934592      1073741824     52.3824     59.0093  [  3]
+ X_POSIX      13  write        9      9663676416      1073741824     59.0184     66.0922  [  3]
+ X_POSIX      13  write       10     10737418240      1073741824     66.0940     72.4666  [  3]
+ X_POSIX      13  write       11     11811160064      1073741824     72.4723     78.9415  [  3]
+ X_POSIX      13  write       12     12884901888      1073741824     78.9435     84.6505  [  3]
+ X_POSIX      13  write       13     13958643712      1073741824     84.6513     90.8400  [  3]
+ X_POSIX      13  write       14     15032385536      1073741824     90.8488     96.8452  [  3]
+ X_POSIX      13  write       15     16106127360      1073741824     96.9335    101.1578  [  3]
+
+# DXT, file_id: 8822507517204064785, file_name: /home/raditya/Feb12/project/testFile.00000021
+# DXT, rank: 13, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      13   read        0               0      1073741824    232.9571    251.8065  [ 15]
+ X_POSIX      13   read        1      1073741824      1073741824    251.8073    268.7624  [ 15]
+ X_POSIX      13   read        2      2147483648      1073741824    268.7645    285.8412  [ 15]
+ X_POSIX      13   read        3      3221225472      1073741824    285.8434    304.2384  [ 15]
+ X_POSIX      13   read        4      4294967296      1073741824    304.2393    322.2480  [ 15]
+ X_POSIX      13   read        5      5368709120      1073741824    322.2486    340.2521  [ 15]
+ X_POSIX      13   read        6      6442450944      1073741824    340.2529    357.9039  [ 15]
+ X_POSIX      13   read        7      7516192768      1073741824    357.9067    375.5597  [ 15]
+ X_POSIX      13   read        8      8589934592      1073741824    375.5615    393.2505  [ 15]
+ X_POSIX      13   read        9      9663676416      1073741824    393.2510    409.9712  [ 15]
+ X_POSIX      13   read       10     10737418240      1073741824    410.1179    426.1395  [ 15]
+ X_POSIX      13   read       11     11811160064      1073741824    426.1484    438.8862  [ 15]
+ X_POSIX      13   read       12     12884901888      1073741824    438.8872    450.6021  [ 15]
+ X_POSIX      13   read       13     13958643712      1073741824    450.7194    460.8642  [ 15]
+ X_POSIX      13   read       14     15032385536      1073741824    460.8655    469.0012  [ 15]
+ X_POSIX      13   read       15     16106127360      1073741824    469.0023    476.5582  [ 15]
+
+# DXT, file_id: 13704465515730605806, file_name: /home/raditya/Feb12/project/testFile.00000014
+# DXT, rank: 14, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      14  write        0               0      1073741824      3.8509     17.8543  [ 15]
+ X_POSIX      14  write        1      1073741824      1073741824     17.8566     38.8691  [ 15]
+ X_POSIX      14  write        2      2147483648      1073741824     38.8716     57.6361  [ 15]
+ X_POSIX      14  write        3      3221225472      1073741824     57.6386     71.5206  [ 15]
+ X_POSIX      14  write        4      4294967296      1073741824     71.5278     84.3807  [ 15]
+ X_POSIX      14  write        5      5368709120      1073741824     84.3815     99.2439  [ 15]
+ X_POSIX      14  write        6      6442450944      1073741824     99.2549    111.3535  [ 15]
+ X_POSIX      14  write        7      7516192768      1073741824    111.3543    125.3402  [ 15]
+ X_POSIX      14  write        8      8589934592      1073741824    125.3426    147.0798  [ 15]
+ X_POSIX      14  write        9      9663676416      1073741824    147.0818    157.1173  [ 15]
+ X_POSIX      14  write       10     10737418240      1073741824    157.1184    163.8376  [ 15]
+ X_POSIX      14  write       11     11811160064      1073741824    163.8389    169.8720  [ 15]
+ X_POSIX      14  write       12     12884901888      1073741824    169.8728    175.0827  [ 15]
+ X_POSIX      14  write       13     13958643712      1073741824    175.0841    180.8376  [ 15]
+ X_POSIX      14  write       14     15032385536      1073741824    180.8406    190.5423  [ 15]
+ X_POSIX      14  write       15     16106127360      1073741824    190.5442    195.5329  [ 15]
+
+# DXT, file_id: 3579769425525253113, file_name: /home/raditya/Feb12/project/testFile.00000022
+# DXT, rank: 14, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 0
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      14   read        0               0      1073741824    232.9574    246.4684  [  0]
+ X_POSIX      14   read        1      1073741824      1073741824    246.4733    257.7241  [  0]
+ X_POSIX      14   read        2      2147483648      1073741824    257.7250    268.9216  [  0]
+ X_POSIX      14   read        3      3221225472      1073741824    268.9224    281.9324  [  0]
+ X_POSIX      14   read        4      4294967296      1073741824    281.9335    293.7033  [  0]
+ X_POSIX      14   read        5      5368709120      1073741824    293.7040    305.9848  [  0]
+ X_POSIX      14   read        6      6442450944      1073741824    305.9857    317.9637  [  0]
+ X_POSIX      14   read        7      7516192768      1073741824    317.9642    330.4258  [  0]
+ X_POSIX      14   read        8      8589934592      1073741824    330.4265    343.0918  [  0]
+ X_POSIX      14   read        9      9663676416      1073741824    343.0925    355.4074  [  0]
+ X_POSIX      14   read       10     10737418240      1073741824    355.4084    367.3244  [  0]
+ X_POSIX      14   read       11     11811160064      1073741824    367.3252    379.8942  [  0]
+ X_POSIX      14   read       12     12884901888      1073741824    380.0640    392.5596  [  0]
+ X_POSIX      14   read       13     13958643712      1073741824    392.5606    402.7464  [  0]
+ X_POSIX      14   read       14     15032385536      1073741824    402.7477    413.5676  [  0]
+ X_POSIX      14   read       15     16106127360      1073741824    413.5684    422.8866  [  0]
+
+# DXT, file_id: 136429942037111526, file_name: /home/raditya/Feb12/project/testFile.00000015
+# DXT, rank: 15, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 21
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      15  write        0               0      1073741824      3.9013     10.8839  [ 21]
+ X_POSIX      15  write        1      1073741824      1073741824     10.8856     17.0349  [ 21]
+ X_POSIX      15  write        2      2147483648      1073741824     17.0391     23.7727  [ 21]
+ X_POSIX      15  write        3      3221225472      1073741824     23.7827     29.4960  [ 21]
+ X_POSIX      15  write        4      4294967296      1073741824     29.7034     34.2117  [ 21]
+ X_POSIX      15  write        5      5368709120      1073741824     34.2191     39.2480  [ 21]
+ X_POSIX      15  write        6      6442450944      1073741824     39.2502     44.2614  [ 21]
+ X_POSIX      15  write        7      7516192768      1073741824     44.2627     49.9971  [ 21]
+ X_POSIX      15  write        8      8589934592      1073741824     50.1069     56.1190  [ 21]
+ X_POSIX      15  write        9      9663676416      1073741824     56.1236     62.9563  [ 21]
+ X_POSIX      15  write       10     10737418240      1073741824     62.9601     69.0560  [ 21]
+ X_POSIX      15  write       11     11811160064      1073741824     69.0595     75.1259  [ 21]
+ X_POSIX      15  write       12     12884901888      1073741824     75.1301     81.2993  [ 21]
+ X_POSIX      15  write       13     13958643712      1073741824     81.3027     86.8719  [ 21]
+ X_POSIX      15  write       14     15032385536      1073741824     86.8800     92.8181  [ 21]
+ X_POSIX      15  write       15     16106127360      1073741824     92.8235     98.5614  [ 21]
+
+# DXT, file_id: 3310672820388311547, file_name: /home/raditya/Feb12/project/testFile.00000023
+# DXT, rank: 15, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 7
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      15   read        0               0      1073741824    232.9790    247.2485  [  7]
+ X_POSIX      15   read        1      1073741824      1073741824    247.2493    260.3784  [  7]
+ X_POSIX      15   read        2      2147483648      1073741824    260.3791    273.0815  [  7]
+ X_POSIX      15   read        3      3221225472      1073741824    273.0822    285.3326  [  7]
+ X_POSIX      15   read        4      4294967296      1073741824    285.3352    298.2662  [  7]
+ X_POSIX      15   read        5      5368709120      1073741824    298.2681    311.1073  [  7]
+ X_POSIX      15   read        6      6442450944      1073741824    311.1085    323.3690  [  7]
+ X_POSIX      15   read        7      7516192768      1073741824    323.3705    335.4978  [  7]
+ X_POSIX      15   read        8      8589934592      1073741824    335.4985    347.9544  [  7]
+ X_POSIX      15   read        9      9663676416      1073741824    347.9582    360.4847  [  7]
+ X_POSIX      15   read       10     10737418240      1073741824    360.4856    371.9842  [  7]
+ X_POSIX      15   read       11     11811160064      1073741824    371.9882    384.9749  [  7]
+ X_POSIX      15   read       12     12884901888      1073741824    384.9757    397.4963  [  7]
+ X_POSIX      15   read       13     13958643712      1073741824    397.5014    409.4368  [  7]
+ X_POSIX      15   read       14     15032385536      1073741824    409.4423    419.9907  [  7]
+ X_POSIX      15   read       15     16106127360      1073741824    419.9926    429.5354  [  7]
+
+# DXT, file_id: 1188025060045851439, file_name: /home/raditya/Feb12/project/testFile.00000016
+# DXT, rank: 16, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 3
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      16  write        0               0      1073741824      3.8723     12.0667  [  3]
+ X_POSIX      16  write        1      1073741824      1073741824     12.0682     21.2116  [  3]
+ X_POSIX      16  write        2      2147483648      1073741824     21.2195     28.7939  [  3]
+ X_POSIX      16  write        3      3221225472      1073741824     28.8032     35.4456  [  3]
+ X_POSIX      16  write        4      4294967296      1073741824     35.4463     42.8675  [  3]
+ X_POSIX      16  write        5      5368709120      1073741824     42.8736     50.4124  [  3]
+ X_POSIX      16  write        6      6442450944      1073741824     50.4249     59.6412  [  3]
+ X_POSIX      16  write        7      7516192768      1073741824     59.6421     68.7867  [  3]
+ X_POSIX      16  write        8      8589934592      1073741824     68.7878     77.0166  [  3]
+ X_POSIX      16  write        9      9663676416      1073741824     77.0175     85.4382  [  3]
+ X_POSIX      16  write       10     10737418240      1073741824     85.4418     92.2247  [  3]
+ X_POSIX      16  write       11     11811160064      1073741824     92.2259     98.5446  [  3]
+ X_POSIX      16  write       12     12884901888      1073741824     98.5453    104.2421  [  3]
+ X_POSIX      16  write       13     13958643712      1073741824    104.3274    110.2966  [  3]
+ X_POSIX      16  write       14     15032385536      1073741824    110.3003    116.5790  [  3]
+ X_POSIX      16  write       15     16106127360      1073741824    116.7248    121.0789  [  3]
+
+# DXT, file_id: 6617333809683356553, file_name: /home/raditya/Feb12/project/testFile.00000000
+# DXT, rank: 16, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      16   read        0               0      1073741824    232.9570    254.5949  [ 15]
+ X_POSIX      16   read        1      1073741824      1073741824    254.5958    275.4307  [ 15]
+ X_POSIX      16   read        2      2147483648      1073741824    275.4314    295.8674  [ 15]
+ X_POSIX      16   read        3      3221225472      1073741824    295.8683    316.7511  [ 15]
+ X_POSIX      16   read        4      4294967296      1073741824    316.7572    338.1065  [ 15]
+ X_POSIX      16   read        5      5368709120      1073741824    338.1073    359.8002  [ 15]
+ X_POSIX      16   read        6      6442450944      1073741824    359.8021    381.2412  [ 15]
+ X_POSIX      16   read        7      7516192768      1073741824    381.2425    402.2662  [ 15]
+ X_POSIX      16   read        8      8589934592      1073741824    402.2688    421.9661  [ 15]
+ X_POSIX      16   read        9      9663676416      1073741824    421.9665    438.9017  [ 15]
+ X_POSIX      16   read       10     10737418240      1073741824    438.9024    457.0275  [ 15]
+ X_POSIX      16   read       11     11811160064      1073741824    457.0285    474.8978  [ 15]
+ X_POSIX      16   read       12     12884901888      1073741824    474.8986    489.2165  [ 15]
+ X_POSIX      16   read       13     13958643712      1073741824    489.2180    502.1919  [ 15]
+ X_POSIX      16   read       14     15032385536      1073741824    502.1931    511.4773  [ 15]
+ X_POSIX      16   read       15     16106127360      1073741824    511.4789    518.8504  [ 15]
+
+# DXT, file_id: 4890807750635903759, file_name: /home/raditya/Feb12/project/testFile.00000017
+# DXT, rank: 17, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 0
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      17  write        0               0      1073741824      3.8816     11.3392  [  0]
+ X_POSIX      17  write        1      1073741824      1073741824     11.3401     21.1811  [  0]
+ X_POSIX      17  write        2      2147483648      1073741824     21.1931     29.3766  [  0]
+ X_POSIX      17  write        3      3221225472      1073741824     29.3830     38.3427  [  0]
+ X_POSIX      17  write        4      4294967296      1073741824     38.3462     47.5679  [  0]
+ X_POSIX      17  write        5      5368709120      1073741824     47.5701     55.7655  [  0]
+ X_POSIX      17  write        6      6442450944      1073741824     55.7701     64.6108  [  0]
+ X_POSIX      17  write        7      7516192768      1073741824     64.6134     73.3275  [  0]
+ X_POSIX      17  write        8      8589934592      1073741824     73.3361     81.8925  [  0]
+ X_POSIX      17  write        9      9663676416      1073741824     81.8966     90.2794  [  0]
+ X_POSIX      17  write       10     10737418240      1073741824     90.4609     98.8338  [  0]
+ X_POSIX      17  write       11     11811160064      1073741824     98.8349    104.9481  [  0]
+ X_POSIX      17  write       12     12884901888      1073741824    104.9543    110.3756  [  0]
+ X_POSIX      17  write       13     13958643712      1073741824    110.3800    115.8512  [  0]
+ X_POSIX      17  write       14     15032385536      1073741824    115.8665    121.0431  [  0]
+ X_POSIX      17  write       15     16106127360      1073741824    121.0501    125.3988  [  0]
+
+# DXT, file_id: 4485515842888025625, file_name: /home/raditya/Feb12/project/testFile.00000001
+# DXT, rank: 17, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 20
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      17   read        0               0      1073741824    232.9573    245.1902  [ 20]
+ X_POSIX      17   read        1      1073741824      1073741824    245.1942    257.5951  [ 20]
+ X_POSIX      17   read        2      2147483648      1073741824    257.5964    270.3284  [ 20]
+ X_POSIX      17   read        3      3221225472      1073741824    270.3295    282.8735  [ 20]
+ X_POSIX      17   read        4      4294967296      1073741824    282.8744    295.3666  [ 20]
+ X_POSIX      17   read        5      5368709120      1073741824    295.3675    309.7983  [ 20]
+ X_POSIX      17   read        6      6442450944      1073741824    309.7990    322.6730  [ 20]
+ X_POSIX      17   read        7      7516192768      1073741824    322.6752    336.0916  [ 20]
+ X_POSIX      17   read        8      8589934592      1073741824    336.0932    348.2422  [ 20]
+ X_POSIX      17   read        9      9663676416      1073741824    348.2429    361.8298  [ 20]
+ X_POSIX      17   read       10     10737418240      1073741824    361.8314    374.1962  [ 20]
+ X_POSIX      17   read       11     11811160064      1073741824    374.1971    387.5017  [ 20]
+ X_POSIX      17   read       12     12884901888      1073741824    387.5035    399.9963  [ 20]
+ X_POSIX      17   read       13     13958643712      1073741824    399.9972    412.4507  [ 20]
+ X_POSIX      17   read       14     15032385536      1073741824    412.4517    422.4823  [ 20]
+ X_POSIX      17   read       15     16106127360      1073741824    422.4829    432.1494  [ 20]
+
+# DXT, file_id: 8976206395720837126, file_name: /home/raditya/Feb12/project/testFile.00000018
+# DXT, rank: 18, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 8
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      18  write        0               0      1073741824      3.8719      8.1725  [  8]
+ X_POSIX      18  write        1      1073741824      1073741824      8.1736     12.8251  [  8]
+ X_POSIX      18  write        2      2147483648      1073741824     12.8270     18.4816  [  8]
+ X_POSIX      18  write        3      3221225472      1073741824     18.4825     24.2051  [  8]
+ X_POSIX      18  write        4      4294967296      1073741824     24.2075     28.9287  [  8]
+ X_POSIX      18  write        5      5368709120      1073741824     29.2465     34.4822  [  8]
+ X_POSIX      18  write        6      6442450944      1073741824     34.4879     40.2307  [  8]
+ X_POSIX      18  write        7      7516192768      1073741824     40.2330     44.6037  [  8]
+ X_POSIX      18  write        8      8589934592      1073741824     44.6060     49.8162  [  8]
+ X_POSIX      18  write        9      9663676416      1073741824     49.8225     54.2484  [  8]
+ X_POSIX      18  write       10     10737418240      1073741824     54.2494     59.3393  [  8]
+ X_POSIX      18  write       11     11811160064      1073741824     59.3454     64.5722  [  8]
+ X_POSIX      18  write       12     12884901888      1073741824     64.5810     69.5583  [  8]
+ X_POSIX      18  write       13     13958643712      1073741824     69.5697     75.5559  [  8]
+ X_POSIX      18  write       14     15032385536      1073741824     75.5644     80.2989  [  8]
+ X_POSIX      18  write       15     16106127360      1073741824     80.3013     85.4414  [  8]
+
+# DXT, file_id: 2239383483592625774, file_name: /home/raditya/Feb12/project/testFile.00000002
+# DXT, rank: 18, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      18   read        0               0      1073741824    232.9576    252.9644  [ 15]
+ X_POSIX      18   read        1      1073741824      1073741824    252.9652    273.3460  [ 15]
+ X_POSIX      18   read        2      2147483648      1073741824    273.3467    293.3950  [ 15]
+ X_POSIX      18   read        3      3221225472      1073741824    293.3958    313.4927  [ 15]
+ X_POSIX      18   read        4      4294967296      1073741824    313.4935    332.9168  [ 15]
+ X_POSIX      18   read        5      5368709120      1073741824    332.9210    351.7833  [ 15]
+ X_POSIX      18   read        6      6442450944      1073741824    351.7843    370.9233  [ 15]
+ X_POSIX      18   read        7      7516192768      1073741824    370.9263    391.1770  [ 15]
+ X_POSIX      18   read        8      8589934592      1073741824    391.1778    410.4026  [ 15]
+ X_POSIX      18   read        9      9663676416      1073741824    410.4035    428.0595  [ 15]
+ X_POSIX      18   read       10     10737418240      1073741824    428.0617    445.3773  [ 15]
+ X_POSIX      18   read       11     11811160064      1073741824    445.3785    464.5840  [ 15]
+ X_POSIX      18   read       12     12884901888      1073741824    464.5850    480.7962  [ 15]
+ X_POSIX      18   read       13     13958643712      1073741824    480.7968    495.1068  [ 15]
+ X_POSIX      18   read       14     15032385536      1073741824    495.1076    506.9823  [ 15]
+ X_POSIX      18   read       15     16106127360      1073741824    506.9830    515.8921  [ 15]
+
+# DXT, file_id: 4417402811538315834, file_name: /home/raditya/Feb12/project/testFile.00000019
+# DXT, rank: 19, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 21
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      19  write        0               0      1073741824      3.8821     19.5020  [ 21]
+ X_POSIX      19  write        1      1073741824      1073741824     19.5122     32.5847  [ 21]
+ X_POSIX      19  write        2      2147483648      1073741824     32.5896     44.6604  [ 21]
+ X_POSIX      19  write        3      3221225472      1073741824     44.6612     59.9990  [ 21]
+ X_POSIX      19  write        4      4294967296      1073741824     60.0012     75.2441  [ 21]
+ X_POSIX      19  write        5      5368709120      1073741824     75.2514     89.3626  [ 21]
+ X_POSIX      19  write        6      6442450944      1073741824     89.3651    100.1481  [ 21]
+ X_POSIX      19  write        7      7516192768      1073741824    100.1595    110.0876  [ 21]
+ X_POSIX      19  write        8      8589934592      1073741824    110.0885    119.5404  [ 21]
+ X_POSIX      19  write        9      9663676416      1073741824    119.5476    125.2968  [ 21]
+ X_POSIX      19  write       10     10737418240      1073741824    125.2989    131.9208  [ 21]
+ X_POSIX      19  write       11     11811160064      1073741824    131.9577    136.8726  [ 21]
+ X_POSIX      19  write       12     12884901888      1073741824    136.8754    143.2507  [ 21]
+ X_POSIX      19  write       13     13958643712      1073741824    143.2516    148.2462  [ 21]
+ X_POSIX      19  write       14     15032385536      1073741824    148.2473    153.2268  [ 21]
+ X_POSIX      19  write       15     16106127360      1073741824    153.2310    157.3778  [ 21]
+
+# DXT, file_id: 11030528003214951808, file_name: /home/raditya/Feb12/project/testFile.00000003
+# DXT, rank: 19, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 11
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      19   read        0               0      1073741824    232.9578    246.9260  [ 11]
+ X_POSIX      19   read        1      1073741824      1073741824    246.9268    258.1311  [ 11]
+ X_POSIX      19   read        2      2147483648      1073741824    258.1319    269.4777  [ 11]
+ X_POSIX      19   read        3      3221225472      1073741824    269.4785    279.6530  [ 11]
+ X_POSIX      19   read        4      4294967296      1073741824    279.6538    290.2194  [ 11]
+ X_POSIX      19   read        5      5368709120      1073741824    290.2217    301.5578  [ 11]
+ X_POSIX      19   read        6      6442450944      1073741824    301.5587    312.5781  [ 11]
+ X_POSIX      19   read        7      7516192768      1073741824    312.5785    324.0343  [ 11]
+ X_POSIX      19   read        8      8589934592      1073741824    324.0352    335.2689  [ 11]
+ X_POSIX      19   read        9      9663676416      1073741824    335.2723    346.2373  [ 11]
+ X_POSIX      19   read       10     10737418240      1073741824    346.2382    356.9918  [ 11]
+ X_POSIX      19   read       11     11811160064      1073741824    356.9927    367.7421  [ 11]
+ X_POSIX      19   read       12     12884901888      1073741824    367.7426    378.2953  [ 11]
+ X_POSIX      19   read       13     13958643712      1073741824    378.2961    389.5016  [ 11]
+ X_POSIX      19   read       14     15032385536      1073741824    389.5022    399.8171  [ 11]
+ X_POSIX      19   read       15     16106127360      1073741824    399.8186    410.7938  [ 11]
+
+# DXT, file_id: 12121164046966517267, file_name: /home/raditya/Feb12/project/testFile.00000020
+# DXT, rank: 20, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 21
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      20  write        0               0      1073741824      3.9080     22.1221  [ 21]
+ X_POSIX      20  write        1      1073741824      1073741824     22.1299     35.9662  [ 21]
+ X_POSIX      20  write        2      2147483648      1073741824     35.9687     50.7098  [ 21]
+ X_POSIX      20  write        3      3221225472      1073741824     50.7146     68.8714  [ 21]
+ X_POSIX      20  write        4      4294967296      1073741824     68.8722     85.6895  [ 21]
+ X_POSIX      20  write        5      5368709120      1073741824     85.6968     98.8133  [ 21]
+ X_POSIX      20  write        6      6442450944      1073741824     98.8164    108.5904  [ 21]
+ X_POSIX      20  write        7      7516192768      1073741824    108.5955    119.1638  [ 21]
+ X_POSIX      20  write        8      8589934592      1073741824    119.1724    125.9068  [ 21]
+ X_POSIX      20  write        9      9663676416      1073741824    125.9085    134.5075  [ 21]
+ X_POSIX      20  write       10     10737418240      1073741824    134.5086    143.1438  [ 21]
+ X_POSIX      20  write       11     11811160064      1073741824    143.1775    150.6166  [ 21]
+ X_POSIX      20  write       12     12884901888      1073741824    150.7219    157.4192  [ 21]
+ X_POSIX      20  write       13     13958643712      1073741824    157.4331    160.4454  [ 21]
+ X_POSIX      20  write       14     15032385536      1073741824    160.4480    163.3256  [ 21]
+ X_POSIX      20  write       15     16106127360      1073741824    163.3264    165.8697  [ 21]
+
+# DXT, file_id: 4594336861342540954, file_name: /home/raditya/Feb12/project/testFile.00000004
+# DXT, rank: 20, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 0
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      20   read        0               0      1073741824    232.9585    247.5912  [  0]
+ X_POSIX      20   read        1      1073741824      1073741824    247.5919    260.5749  [  0]
+ X_POSIX      20   read        2      2147483648      1073741824    260.5757    273.5819  [  0]
+ X_POSIX      20   read        3      3221225472      1073741824    273.5827    287.3231  [  0]
+ X_POSIX      20   read        4      4294967296      1073741824    287.3239    300.3853  [  0]
+ X_POSIX      20   read        5      5368709120      1073741824    300.3860    313.7367  [  0]
+ X_POSIX      20   read        6      6442450944      1073741824    313.7374    326.6656  [  0]
+ X_POSIX      20   read        7      7516192768      1073741824    326.6663    339.5766  [  0]
+ X_POSIX      20   read        8      8589934592      1073741824    339.5774    352.2671  [  0]
+ X_POSIX      20   read        9      9663676416      1073741824    352.2696    365.1853  [  0]
+ X_POSIX      20   read       10     10737418240      1073741824    365.1862    377.3619  [  0]
+ X_POSIX      20   read       11     11811160064      1073741824    377.3640    389.8773  [  0]
+ X_POSIX      20   read       12     12884901888      1073741824    389.8808    402.6858  [  0]
+ X_POSIX      20   read       13     13958643712      1073741824    402.6870    415.0575  [  0]
+ X_POSIX      20   read       14     15032385536      1073741824    415.0583    423.7523  [  0]
+ X_POSIX      20   read       15     16106127360      1073741824    423.7531    430.2555  [  0]
+
+# DXT, file_id: 8822507517204064785, file_name: /home/raditya/Feb12/project/testFile.00000021
+# DXT, rank: 21, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      21  write        0               0      1073741824      3.8583     12.8843  [ 15]
+ X_POSIX      21  write        1      1073741824      1073741824     12.8912     23.0455  [ 15]
+ X_POSIX      21  write        2      2147483648      1073741824     23.0507     38.4152  [ 15]
+ X_POSIX      21  write        3      3221225472      1073741824     38.4262     52.8089  [ 15]
+ X_POSIX      21  write        4      4294967296      1073741824     52.8196     62.7554  [ 15]
+ X_POSIX      21  write        5      5368709120      1073741824     62.7612     72.3459  [ 15]
+ X_POSIX      21  write        6      6442450944      1073741824     72.6912     81.3654  [ 15]
+ X_POSIX      21  write        7      7516192768      1073741824     81.3688     89.7600  [ 15]
+ X_POSIX      21  write        8      8589934592      1073741824     89.7677    101.5186  [ 15]
+ X_POSIX      21  write        9      9663676416      1073741824    101.5250    110.1284  [ 15]
+ X_POSIX      21  write       10     10737418240      1073741824    110.1356    118.8475  [ 15]
+ X_POSIX      21  write       11     11811160064      1073741824    118.8549    136.8352  [ 15]
+ X_POSIX      21  write       12     12884901888      1073741824    136.8361    146.5753  [ 15]
+ X_POSIX      21  write       13     13958643712      1073741824    146.5773    151.6633  [ 15]
+ X_POSIX      21  write       14     15032385536      1073741824    151.6641    158.3090  [ 15]
+ X_POSIX      21  write       15     16106127360      1073741824    158.3141    162.8081  [ 15]
+
+# DXT, file_id: 8291793450924322731, file_name: /home/raditya/Feb12/project/testFile.00000005
+# DXT, rank: 21, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 15
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      21   read        0               0      1073741824    232.9584    253.7172  [ 15]
+ X_POSIX      21   read        1      1073741824      1073741824    253.7187    273.5859  [ 15]
+ X_POSIX      21   read        2      2147483648      1073741824    273.5901    292.6215  [ 15]
+ X_POSIX      21   read        3      3221225472      1073741824    292.6222    312.4773  [ 15]
+ X_POSIX      21   read        4      4294967296      1073741824    312.4781    332.6240  [ 15]
+ X_POSIX      21   read        5      5368709120      1073741824    332.6256    352.6532  [ 15]
+ X_POSIX      21   read        6      6442450944      1073741824    352.6539    372.5672  [ 15]
+ X_POSIX      21   read        7      7516192768      1073741824    372.5685    392.5907  [ 15]
+ X_POSIX      21   read        8      8589934592      1073741824    392.5915    411.9874  [ 15]
+ X_POSIX      21   read        9      9663676416      1073741824    411.9881    430.8835  [ 15]
+ X_POSIX      21   read       10     10737418240      1073741824    430.8841    450.1134  [ 15]
+ X_POSIX      21   read       11     11811160064      1073741824    450.1141    467.7156  [ 15]
+ X_POSIX      21   read       12     12884901888      1073741824    467.7161    484.3266  [ 15]
+ X_POSIX      21   read       13     13958643712      1073741824    484.3273    498.3628  [ 15]
+ X_POSIX      21   read       14     15032385536      1073741824    498.3679    508.9464  [ 15]
+ X_POSIX      21   read       15     16106127360      1073741824    508.9470    517.2891  [ 15]
+
+# DXT, file_id: 3579769425525253113, file_name: /home/raditya/Feb12/project/testFile.00000022
+# DXT, rank: 22, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 0
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      22  write        0               0      1073741824      3.8517     13.4372  [  0]
+ X_POSIX      22  write        1      1073741824      1073741824     13.4430     24.5913  [  0]
+ X_POSIX      22  write        2      2147483648      1073741824     24.6031     35.0628  [  0]
+ X_POSIX      22  write        3      3221225472      1073741824     35.0697     45.7173  [  0]
+ X_POSIX      22  write        4      4294967296      1073741824     45.7249     55.3592  [  0]
+ X_POSIX      22  write        5      5368709120      1073741824     55.3607     65.4768  [  0]
+ X_POSIX      22  write        6      6442450944      1073741824     65.4815     75.5427  [  0]
+ X_POSIX      22  write        7      7516192768      1073741824     75.5599     85.7276  [  0]
+ X_POSIX      22  write        8      8589934592      1073741824     85.7285     93.6228  [  0]
+ X_POSIX      22  write        9      9663676416      1073741824     93.6235    102.0794  [  0]
+ X_POSIX      22  write       10     10737418240      1073741824    102.0821    107.7234  [  0]
+ X_POSIX      22  write       11     11811160064      1073741824    107.7322    113.2302  [  0]
+ X_POSIX      22  write       12     12884901888      1073741824    113.2380    118.8040  [  0]
+ X_POSIX      22  write       13     13958643712      1073741824    118.8056    124.1017  [  0]
+ X_POSIX      22  write       14     15032385536      1073741824    124.1501    127.1586  [  0]
+ X_POSIX      22  write       15     16106127360      1073741824    127.1594    129.4726  [  0]
+
+# DXT, file_id: 13500644276017873973, file_name: /home/raditya/Feb12/project/testFile.00000006
+# DXT, rank: 22, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 20
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      22   read        0               0      1073741824    232.9580    247.6347  [ 20]
+ X_POSIX      22   read        1      1073741824      1073741824    247.6354    260.2152  [ 20]
+ X_POSIX      22   read        2      2147483648      1073741824    260.2159    273.0114  [ 20]
+ X_POSIX      22   read        3      3221225472      1073741824    273.0122    285.5533  [ 20]
+ X_POSIX      22   read        4      4294967296      1073741824    285.5538    298.5595  [ 20]
+ X_POSIX      22   read        5      5368709120      1073741824    298.5602    311.0029  [ 20]
+ X_POSIX      22   read        6      6442450944      1073741824    311.0038    324.2933  [ 20]
+ X_POSIX      22   read        7      7516192768      1073741824    324.2946    337.5175  [ 20]
+ X_POSIX      22   read        8      8589934592      1073741824    337.5180    350.8378  [ 20]
+ X_POSIX      22   read        9      9663676416      1073741824    350.8480    363.4462  [ 20]
+ X_POSIX      22   read       10     10737418240      1073741824    363.4473    376.4677  [ 20]
+ X_POSIX      22   read       11     11811160064      1073741824    376.4684    389.0233  [ 20]
+ X_POSIX      22   read       12     12884901888      1073741824    389.0240    401.1587  [ 20]
+ X_POSIX      22   read       13     13958643712      1073741824    401.1599    413.1535  [ 20]
+ X_POSIX      22   read       14     15032385536      1073741824    413.1576    424.3026  [ 20]
+ X_POSIX      22   read       15     16106127360      1073741824    424.3041    432.7838  [ 20]
+
+# DXT, file_id: 3310672820388311547, file_name: /home/raditya/Feb12/project/testFile.00000023
+# DXT, rank: 23, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 7
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      23  write        0               0      1073741824      3.8552     11.9995  [  7]
+ X_POSIX      23  write        1      1073741824      1073741824     12.0005     21.0208  [  7]
+ X_POSIX      23  write        2      2147483648      1073741824     21.0321     29.2660  [  7]
+ X_POSIX      23  write        3      3221225472      1073741824     29.2737     35.1344  [  7]
+ X_POSIX      23  write        4      4294967296      1073741824     35.1420     42.4359  [  7]
+ X_POSIX      23  write        5      5368709120      1073741824     42.4443     49.5539  [  7]
+ X_POSIX      23  write        6      6442450944      1073741824     49.7611     58.3917  [  7]
+ X_POSIX      23  write        7      7516192768      1073741824     58.3931     67.3410  [  7]
+ X_POSIX      23  write        8      8589934592      1073741824     67.3526     75.4451  [  7]
+ X_POSIX      23  write        9      9663676416      1073741824     75.4513     83.5085  [  7]
+ X_POSIX      23  write       10     10737418240      1073741824     83.5160     90.3499  [  7]
+ X_POSIX      23  write       11     11811160064      1073741824     90.4596     96.5458  [  7]
+ X_POSIX      23  write       12     12884901888      1073741824     96.5471    101.0019  [  7]
+ X_POSIX      23  write       13     13958643712      1073741824    101.0039    105.6212  [  7]
+ X_POSIX      23  write       14     15032385536      1073741824    105.6222    111.0110  [  7]
+ X_POSIX      23  write       15     16106127360      1073741824    111.0291    116.9007  [  7]
+
+# DXT, file_id: 13901290699237556864, file_name: /home/raditya/Feb12/project/testFile.00000007
+# DXT, rank: 23, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# DXT, Lustre stripe_size: 1048576, Lustre stripe_count: 1
+# DXT, Lustre OST obdidx: 2
+# Module    Rank  Wt/Rd  Segment          Offset       Length    Start(s)      End(s)  [OST]
+ X_POSIX      23   read        0               0      1073741824    232.9582    245.6426  [  2]
+ X_POSIX      23   read        1      1073741824      1073741824    245.6433    256.6919  [  2]
+ X_POSIX      23   read        2      2147483648      1073741824    256.6939    268.2395  [  2]
+ X_POSIX      23   read        3      3221225472      1073741824    268.2410    279.7841  [  2]
+ X_POSIX      23   read        4      4294967296      1073741824    279.7851    291.6039  [  2]
+ X_POSIX      23   read        5      5368709120      1073741824    291.6049    303.1518  [  2]
+ X_POSIX      23   read        6      6442450944      1073741824    303.1536    314.7074  [  2]
+ X_POSIX      23   read        7      7516192768      1073741824    314.7081    325.9516  [  2]
+ X_POSIX      23   read        8      8589934592      1073741824    325.9521    337.0447  [  2]
+ X_POSIX      23   read        9      9663676416      1073741824    337.0454    348.3705  [  2]
+ X_POSIX      23   read       10     10737418240      1073741824    348.3721    359.7143  [  2]
+ X_POSIX      23   read       11     11811160064      1073741824    359.7180    370.3855  [  2]
+ X_POSIX      23   read       12     12884901888      1073741824    370.3867    381.8194  [  2]
+ X_POSIX      23   read       13     13958643712      1073741824    381.8211    392.9454  [  2]
+ X_POSIX      23   read       14     15032385536      1073741824    392.9464    404.1908  [  2]
+ X_POSIX      23   read       15     16106127360      1073741824    404.1915    414.8587  [  2]
+
+# ***************************************************
+# DXT_MPIIO module data
+# ***************************************************
+
+# DXT, file_id: 6617333809683356553, file_name: /home/raditya/Feb12/project/testFile.00000000
+# DXT, rank: 0, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       0  write        0      1073741824      3.8625     25.2497
+ X_MPIIO       0  write        1      1073741824     25.2499     61.8561
+ X_MPIIO       0  write        2      1073741824     61.8561     82.6300
+ X_MPIIO       0  write        3      1073741824     82.6300    105.8255
+ X_MPIIO       0  write        4      1073741824    105.8255    130.3087
+ X_MPIIO       0  write        5      1073741824    130.3087    152.1578
+ X_MPIIO       0  write        6      1073741824    152.1578    165.0960
+ X_MPIIO       0  write        7      1073741824    165.0960    174.5252
+ X_MPIIO       0  write        8      1073741824    174.5252    182.9828
+ X_MPIIO       0  write        9      1073741824    182.9828    195.7237
+ X_MPIIO       0  write       10      1073741824    195.7237    207.1714
+ X_MPIIO       0  write       11      1073741824    207.1714    213.2042
+ X_MPIIO       0  write       12      1073741824    213.2042    217.1635
+ X_MPIIO       0  write       13      1073741824    217.1635    221.1753
+ X_MPIIO       0  write       14      1073741824    221.1753    224.9558
+ X_MPIIO       0  write       15      1073741824    224.9558    228.9816
+
+# DXT, file_id: 7662040658127752710, file_name: /home/raditya/Feb12/project/testFile.00000008
+# DXT, rank: 0, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       0   read        0      1073741824    232.9580    246.5803
+ X_MPIIO       0   read        1      1073741824    246.5803    258.0340
+ X_MPIIO       0   read        2      1073741824    258.0340    270.0061
+ X_MPIIO       0   read        3      1073741824    270.0061    281.9508
+ X_MPIIO       0   read        4      1073741824    281.9508    294.0436
+ X_MPIIO       0   read        5      1073741824    294.0436    306.1987
+ X_MPIIO       0   read        6      1073741824    306.1987    317.9572
+ X_MPIIO       0   read        7      1073741824    317.9573    330.3954
+ X_MPIIO       0   read        8      1073741824    330.3954    342.1238
+ X_MPIIO       0   read        9      1073741824    342.1238    353.7925
+ X_MPIIO       0   read       10      1073741824    353.9468    366.1412
+ X_MPIIO       0   read       11      1073741824    366.1412    377.6496
+ X_MPIIO       0   read       12      1073741824    377.6867    389.4619
+ X_MPIIO       0   read       13      1073741824    389.4619    401.0330
+ X_MPIIO       0   read       14      1073741824    401.0330    412.3615
+ X_MPIIO       0   read       15      1073741824    412.3616    422.9909
+
+# DXT, file_id: 4485515842888025625, file_name: /home/raditya/Feb12/project/testFile.00000001
+# DXT, rank: 1, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       1  write        0      1073741824      3.8669     14.7175
+ X_MPIIO       1  write        1      1073741824     14.7175     25.0374
+ X_MPIIO       1  write        2      1073741824     25.0374     35.1491
+ X_MPIIO       1  write        3      1073741824     35.1491     45.5995
+ X_MPIIO       1  write        4      1073741824     45.5995     57.2596
+ X_MPIIO       1  write        5      1073741824     57.2596     67.8244
+ X_MPIIO       1  write        6      1073741824     67.8244     79.2019
+ X_MPIIO       1  write        7      1073741824     79.2019     88.3464
+ X_MPIIO       1  write        8      1073741824     88.3464     96.4784
+ X_MPIIO       1  write        9      1073741824     96.4784    103.3149
+ X_MPIIO       1  write       10      1073741824    103.3149    108.3737
+ X_MPIIO       1  write       11      1073741824    108.3737    113.4594
+ X_MPIIO       1  write       12      1073741824    113.4594    118.7110
+ X_MPIIO       1  write       13      1073741824    118.7110    124.6903
+ X_MPIIO       1  write       14      1073741824    124.6903    130.6059
+ X_MPIIO       1  write       15      1073741824    130.6059    136.0060
+
+# DXT, file_id: 13366175577126266022, file_name: /home/raditya/Feb12/project/testFile.00000009
+# DXT, rank: 1, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       1   read        0      1073741824    232.9586    247.9136
+ X_MPIIO       1   read        1      1073741824    247.9136    261.4563
+ X_MPIIO       1   read        2      1073741824    261.4564    274.7405
+ X_MPIIO       1   read        3      1073741824    274.7405    289.1719
+ X_MPIIO       1   read        4      1073741824    289.1719    302.5847
+ X_MPIIO       1   read        5      1073741824    302.5847    317.1969
+ X_MPIIO       1   read        6      1073741824    317.1969    330.4844
+ X_MPIIO       1   read        7      1073741824    330.4844    344.5402
+ X_MPIIO       1   read        8      1073741824    344.5402    358.6326
+ X_MPIIO       1   read        9      1073741824    358.6326    372.7928
+ X_MPIIO       1   read       10      1073741824    372.7928    386.4220
+ X_MPIIO       1   read       11      1073741824    386.4220    399.3913
+ X_MPIIO       1   read       12      1073741824    399.3914    413.0501
+ X_MPIIO       1   read       13      1073741824    413.0501    425.2604
+ X_MPIIO       1   read       14      1073741824    425.2604    434.7736
+ X_MPIIO       1   read       15      1073741824    434.7736    442.4615
+
+# DXT, file_id: 2239383483592625774, file_name: /home/raditya/Feb12/project/testFile.00000002
+# DXT, rank: 2, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       2  write        0      1073741824      3.8531     14.9508
+ X_MPIIO       2  write        1      1073741824     14.9508     28.8769
+ X_MPIIO       2  write        2      1073741824     28.8769     53.8709
+ X_MPIIO       2  write        3      1073741824     53.8709     65.2829
+ X_MPIIO       2  write        4      1073741824     65.2830     77.7451
+ X_MPIIO       2  write        5      1073741824     77.7451     87.4184
+ X_MPIIO       2  write        6      1073741824     87.4184    103.1508
+ X_MPIIO       2  write        7      1073741824    103.1508    116.6763
+ X_MPIIO       2  write        8      1073741824    116.6763    146.7507
+ X_MPIIO       2  write        9      1073741824    146.7507    158.4253
+ X_MPIIO       2  write       10      1073741824    158.4253    166.8371
+ X_MPIIO       2  write       11      1073741824    166.8371    175.0538
+ X_MPIIO       2  write       12      1073741824    175.0538    182.6134
+ X_MPIIO       2  write       13      1073741824    182.6134    194.1003
+ X_MPIIO       2  write       14      1073741824    194.1003    200.8423
+ X_MPIIO       2  write       15      1073741824    200.8423    211.3902
+
+# DXT, file_id: 3153800783731232617, file_name: /home/raditya/Feb12/project/testFile.00000010
+# DXT, rank: 2, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       2   read        0      1073741824    233.0117    253.8772
+ X_MPIIO       2   read        1      1073741824    253.8773    273.1318
+ X_MPIIO       2   read        2      1073741824    273.1318    292.0015
+ X_MPIIO       2   read        3      1073741824    292.0015    310.9412
+ X_MPIIO       2   read        4      1073741824    310.9412    330.1655
+ X_MPIIO       2   read        5      1073741824    330.1656    348.7656
+ X_MPIIO       2   read        6      1073741824    348.7656    367.9220
+ X_MPIIO       2   read        7      1073741824    367.9220    386.6267
+ X_MPIIO       2   read        8      1073741824    386.6267    405.2573
+ X_MPIIO       2   read        9      1073741824    405.2573    423.4287
+ X_MPIIO       2   read       10      1073741824    423.4288    441.9230
+ X_MPIIO       2   read       11      1073741824    441.9230    455.8958
+ X_MPIIO       2   read       12      1073741824    455.8958    468.1968
+ X_MPIIO       2   read       13      1073741824    468.1968    480.6772
+ X_MPIIO       2   read       14      1073741824    480.6772    489.7334
+ X_MPIIO       2   read       15      1073741824    489.7334    499.7382
+
+# DXT, file_id: 11030528003214951808, file_name: /home/raditya/Feb12/project/testFile.00000003
+# DXT, rank: 3, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       3  write        0      1073741824      3.8539      8.1686
+ X_MPIIO       3  write        1      1073741824      8.1686     12.4090
+ X_MPIIO       3  write        2      1073741824     12.4090     17.2289
+ X_MPIIO       3  write        3      1073741824     17.2289     21.7287
+ X_MPIIO       3  write        4      1073741824     21.7288     26.4175
+ X_MPIIO       3  write        5      1073741824     26.4175     30.7921
+ X_MPIIO       3  write        6      1073741824     30.7921     34.9807
+ X_MPIIO       3  write        7      1073741824     34.9808     39.8600
+ X_MPIIO       3  write        8      1073741824     39.8600     44.4305
+ X_MPIIO       3  write        9      1073741824     44.4305     49.1239
+ X_MPIIO       3  write       10      1073741824     49.1239     53.2575
+ X_MPIIO       3  write       11      1073741824     53.2575     57.6981
+ X_MPIIO       3  write       12      1073741824     57.6981     62.6156
+ X_MPIIO       3  write       13      1073741824     62.6156     68.0069
+ X_MPIIO       3  write       14      1073741824     68.0069     72.8993
+ X_MPIIO       3  write       15      1073741824     72.8993     77.7800
+
+# DXT, file_id: 11225106729379473008, file_name: /home/raditya/Feb12/project/testFile.00000011
+# DXT, rank: 3, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       3   read        0      1073741824    232.9924    247.9683
+ X_MPIIO       3   read        1      1073741824    247.9684    260.8533
+ X_MPIIO       3   read        2      1073741824    260.8533    273.9833
+ X_MPIIO       3   read        3      1073741824    274.1472    288.0011
+ X_MPIIO       3   read        4      1073741824    288.0012    301.0336
+ X_MPIIO       3   read        5      1073741824    301.0336    315.3831
+ X_MPIIO       3   read        6      1073741824    315.3831    328.6400
+ X_MPIIO       3   read        7      1073741824    328.6401    342.1463
+ X_MPIIO       3   read        8      1073741824    342.1463    356.0700
+ X_MPIIO       3   read        9      1073741824    356.0700    369.0743
+ X_MPIIO       3   read       10      1073741824    369.0743    381.6009
+ X_MPIIO       3   read       11      1073741824    381.6009    394.9565
+ X_MPIIO       3   read       12      1073741824    394.9565    408.4447
+ X_MPIIO       3   read       13      1073741824    408.4447    421.8576
+ X_MPIIO       3   read       14      1073741824    421.8576    432.2489
+ X_MPIIO       3   read       15      1073741824    432.2489    440.3385
+
+# DXT, file_id: 4594336861342540954, file_name: /home/raditya/Feb12/project/testFile.00000004
+# DXT, rank: 4, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       4  write        0      1073741824      3.8542      9.9970
+ X_MPIIO       4  write        1      1073741824      9.9970     16.3591
+ X_MPIIO       4  write        2      1073741824     16.3591     22.2553
+ X_MPIIO       4  write        3      1073741824     22.2553     28.9100
+ X_MPIIO       4  write        4      1073741824     28.9100     34.4567
+ X_MPIIO       4  write        5      1073741824     34.4567     40.2458
+ X_MPIIO       4  write        6      1073741824     40.2458     46.2026
+ X_MPIIO       4  write        7      1073741824     46.2026     52.5476
+ X_MPIIO       4  write        8      1073741824     52.5476     59.4282
+ X_MPIIO       4  write        9      1073741824     59.4282     65.8258
+ X_MPIIO       4  write       10      1073741824     65.8258     71.9992
+ X_MPIIO       4  write       11      1073741824     71.9993     78.5579
+ X_MPIIO       4  write       12      1073741824     78.5579     84.2205
+ X_MPIIO       4  write       13      1073741824     84.2205     89.9827
+ X_MPIIO       4  write       14      1073741824     89.9827     95.3481
+ X_MPIIO       4  write       15      1073741824     95.3481    101.1924
+
+# DXT, file_id: 16752825045268591791, file_name: /home/raditya/Feb12/project/testFile.00000012
+# DXT, rank: 4, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       4   read        0      1073741824    232.9571    248.2992
+ X_MPIIO       4   read        1      1073741824    248.2992    261.3565
+ X_MPIIO       4   read        2      1073741824    261.3565    275.7618
+ X_MPIIO       4   read        3      1073741824    275.7618    288.7419
+ X_MPIIO       4   read        4      1073741824    288.7419    302.2799
+ X_MPIIO       4   read        5      1073741824    302.2799    316.8960
+ X_MPIIO       4   read        6      1073741824    316.8960    330.7210
+ X_MPIIO       4   read        7      1073741824    330.7210    344.9703
+ X_MPIIO       4   read        8      1073741824    344.9703    358.5940
+ X_MPIIO       4   read        9      1073741824    358.5940    372.4180
+ X_MPIIO       4   read       10      1073741824    372.4180    385.7356
+ X_MPIIO       4   read       11      1073741824    385.8518    399.7115
+ X_MPIIO       4   read       12      1073741824    399.7115    412.9932
+ X_MPIIO       4   read       13      1073741824    412.9932    425.1338
+ X_MPIIO       4   read       14      1073741824    425.1338    434.8579
+ X_MPIIO       4   read       15      1073741824    434.8579    443.3482
+
+# DXT, file_id: 8291793450924322731, file_name: /home/raditya/Feb12/project/testFile.00000005
+# DXT, rank: 5, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       5  write        0      1073741824      3.8535     18.6024
+ X_MPIIO       5  write        1      1073741824     18.6024     47.7876
+ X_MPIIO       5  write        2      1073741824     47.7876     62.2428
+ X_MPIIO       5  write        3      1073741824     62.2428     77.4877
+ X_MPIIO       5  write        4      1073741824     77.4877     91.0495
+ X_MPIIO       5  write        5      1073741824     91.0495    112.5656
+ X_MPIIO       5  write        6      1073741824    112.5656    147.6181
+ X_MPIIO       5  write        7      1073741824    147.6181    164.6049
+ X_MPIIO       5  write        8      1073741824    164.6049    177.9008
+ X_MPIIO       5  write        9      1073741824    177.9008    194.9205
+ X_MPIIO       5  write       10      1073741824    194.9205    210.4890
+ X_MPIIO       5  write       11      1073741824    210.4890    216.4289
+ X_MPIIO       5  write       12      1073741824    216.4289    221.8847
+ X_MPIIO       5  write       13      1073741824    221.8847    227.4554
+ X_MPIIO       5  write       14      1073741824    227.4554    230.6065
+ X_MPIIO       5  write       15      1073741824    230.6065    232.9469
+
+# DXT, file_id: 10015593471693893441, file_name: /home/raditya/Feb12/project/testFile.00000013
+# DXT, rank: 5, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       5   read        0      1073741824    232.9877    248.0299
+ X_MPIIO       5   read        1      1073741824    248.0299    261.6185
+ X_MPIIO       5   read        2      1073741824    261.6185    275.2915
+ X_MPIIO       5   read        3      1073741824    275.2915    288.5952
+ X_MPIIO       5   read        4      1073741824    288.5953    301.5183
+ X_MPIIO       5   read        5      1073741824    301.5183    314.4815
+ X_MPIIO       5   read        6      1073741824    314.5362    327.8931
+ X_MPIIO       5   read        7      1073741824    327.9075    341.1882
+ X_MPIIO       5   read        8      1073741824    341.1883    354.1453
+ X_MPIIO       5   read        9      1073741824    354.1453    367.2396
+ X_MPIIO       5   read       10      1073741824    367.2396    381.2865
+ X_MPIIO       5   read       11      1073741824    381.2865    394.9088
+ X_MPIIO       5   read       12      1073741824    394.9089    408.3703
+ X_MPIIO       5   read       13      1073741824    408.3703    421.1001
+ X_MPIIO       5   read       14      1073741824    421.1002    433.5790
+ X_MPIIO       5   read       15      1073741824    433.5790    444.5450
+
+# DXT, file_id: 13500644276017873973, file_name: /home/raditya/Feb12/project/testFile.00000006
+# DXT, rank: 6, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       6  write        0      1073741824      3.8527     16.9811
+ X_MPIIO       6  write        1      1073741824     16.9812     30.4455
+ X_MPIIO       6  write        2      1073741824     30.4455     43.3794
+ X_MPIIO       6  write        3      1073741824     43.3794     57.4469
+ X_MPIIO       6  write        4      1073741824     57.4469     71.1033
+ X_MPIIO       6  write        5      1073741824     71.1033     84.4107
+ X_MPIIO       6  write        6      1073741824     84.4107     95.7364
+ X_MPIIO       6  write        7      1073741824     95.7364    103.6923
+ X_MPIIO       6  write        8      1073741824    103.6923    109.5816
+ X_MPIIO       6  write        9      1073741824    109.5816    115.5622
+ X_MPIIO       6  write       10      1073741824    115.5622    122.1496
+ X_MPIIO       6  write       11      1073741824    122.1496    128.6831
+ X_MPIIO       6  write       12      1073741824    128.6831    135.0257
+ X_MPIIO       6  write       13      1073741824    135.0257    138.4508
+ X_MPIIO       6  write       14      1073741824    138.4508    142.2613
+ X_MPIIO       6  write       15      1073741824    142.2613    145.3869
+
+# DXT, file_id: 13704465515730605806, file_name: /home/raditya/Feb12/project/testFile.00000014
+# DXT, rank: 6, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       6   read        0      1073741824    232.9583    251.1267
+ X_MPIIO       6   read        1      1073741824    251.1268    270.3846
+ X_MPIIO       6   read        2      1073741824    270.3846    290.1847
+ X_MPIIO       6   read        3      1073741824    290.1847    308.9547
+ X_MPIIO       6   read        4      1073741824    308.9547    327.8931
+ X_MPIIO       6   read        5      1073741824    327.9086    346.8964
+ X_MPIIO       6   read        6      1073741824    346.8964    365.3173
+ X_MPIIO       6   read        7      1073741824    365.3173    384.7163
+ X_MPIIO       6   read        8      1073741824    384.7163    404.3759
+ X_MPIIO       6   read        9      1073741824    404.3759    423.5990
+ X_MPIIO       6   read       10      1073741824    423.5990    442.6166
+ X_MPIIO       6   read       11      1073741824    442.6167    456.1575
+ X_MPIIO       6   read       12      1073741824    456.1575    470.3411
+ X_MPIIO       6   read       13      1073741824    470.3411    481.2212
+ X_MPIIO       6   read       14      1073741824    481.2212    492.4410
+ X_MPIIO       6   read       15      1073741824    492.4411    501.1985
+
+# DXT, file_id: 13901290699237556864, file_name: /home/raditya/Feb12/project/testFile.00000007
+# DXT, rank: 7, hostname: cn206
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       7  write        0      1073741824      3.8546     10.1759
+ X_MPIIO       7  write        1      1073741824     10.1759     16.6335
+ X_MPIIO       7  write        2      1073741824     16.6335     22.5583
+ X_MPIIO       7  write        3      1073741824     22.5583     29.2945
+ X_MPIIO       7  write        4      1073741824     29.2945     34.9272
+ X_MPIIO       7  write        5      1073741824     34.9272     40.6541
+ X_MPIIO       7  write        6      1073741824     40.6541     46.9476
+ X_MPIIO       7  write        7      1073741824     46.9476     53.5906
+ X_MPIIO       7  write        8      1073741824     53.5906     60.0326
+ X_MPIIO       7  write        9      1073741824     60.0326     66.5977
+ X_MPIIO       7  write       10      1073741824     66.5977     72.9094
+ X_MPIIO       7  write       11      1073741824     72.9094     79.4767
+ X_MPIIO       7  write       12      1073741824     79.4767     85.0160
+ X_MPIIO       7  write       13      1073741824     85.0160     90.8018
+ X_MPIIO       7  write       14      1073741824     90.8018     95.9887
+ X_MPIIO       7  write       15      1073741824     95.9887    101.1938
+
+# DXT, file_id: 136429942037111526, file_name: /home/raditya/Feb12/project/testFile.00000015
+# DXT, rank: 7, hostname: cn206
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       7   read        0      1073741824    232.9581    248.0773
+ X_MPIIO       7   read        1      1073741824    248.0773    262.1426
+ X_MPIIO       7   read        2      1073741824    262.1426    274.9602
+ X_MPIIO       7   read        3      1073741824    274.9602    288.7479
+ X_MPIIO       7   read        4      1073741824    288.7479    302.0032
+ X_MPIIO       7   read        5      1073741824    302.0032    314.8929
+ X_MPIIO       7   read        6      1073741824    314.8930    328.6685
+ X_MPIIO       7   read        7      1073741824    328.6685    342.1270
+ X_MPIIO       7   read        8      1073741824    342.1270    355.0476
+ X_MPIIO       7   read        9      1073741824    355.0476    368.9883
+ X_MPIIO       7   read       10      1073741824    368.9883    381.7015
+ X_MPIIO       7   read       11      1073741824    381.7015    395.0954
+ X_MPIIO       7   read       12      1073741824    395.0954    408.0410
+ X_MPIIO       7   read       13      1073741824    408.0410    420.3702
+ X_MPIIO       7   read       14      1073741824    420.4042    433.1575
+ X_MPIIO       7   read       15      1073741824    433.1575    443.5774
+
+# DXT, file_id: 7662040658127752710, file_name: /home/raditya/Feb12/project/testFile.00000008
+# DXT, rank: 8, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       8  write        0      1073741824      3.8518     10.9661
+ X_MPIIO       8  write        1      1073741824     10.9662     17.2610
+ X_MPIIO       8  write        2      1073741824     17.2610     23.1445
+ X_MPIIO       8  write        3      1073741824     23.1445     29.7574
+ X_MPIIO       8  write        4      1073741824     29.7574     35.5620
+ X_MPIIO       8  write        5      1073741824     35.5621     40.7357
+ X_MPIIO       8  write        6      1073741824     40.7357     46.3836
+ X_MPIIO       8  write        7      1073741824     46.3836     52.3579
+ X_MPIIO       8  write        8      1073741824     52.3579     58.4332
+ X_MPIIO       8  write        9      1073741824     58.4332     64.6168
+ X_MPIIO       8  write       10      1073741824     64.6169     71.0334
+ X_MPIIO       8  write       11      1073741824     71.0334     77.5252
+ X_MPIIO       8  write       12      1073741824     77.5252     84.3283
+ X_MPIIO       8  write       13      1073741824     84.3283     90.3999
+ X_MPIIO       8  write       14      1073741824     90.3999     95.7418
+ X_MPIIO       8  write       15      1073741824     95.7418    100.0561
+
+# DXT, file_id: 1188025060045851439, file_name: /home/raditya/Feb12/project/testFile.00000016
+# DXT, rank: 8, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       8   read        0      1073741824    233.0110    248.3953
+ X_MPIIO       8   read        1      1073741824    248.3953    263.5164
+ X_MPIIO       8   read        2      1073741824    263.5164    278.1201
+ X_MPIIO       8   read        3      1073741824    278.1201    291.6453
+ X_MPIIO       8   read        4      1073741824    291.6453    305.6563
+ X_MPIIO       8   read        5      1073741824    305.6563    319.8946
+ X_MPIIO       8   read        6      1073741824    319.8946    333.8533
+ X_MPIIO       8   read        7      1073741824    333.8533    348.4234
+ X_MPIIO       8   read        8      1073741824    348.4234    361.4787
+ X_MPIIO       8   read        9      1073741824    361.4787    375.0895
+ X_MPIIO       8   read       10      1073741824    375.0895    389.1842
+ X_MPIIO       8   read       11      1073741824    389.1842    403.0561
+ X_MPIIO       8   read       12      1073741824    403.0561    415.6862
+ X_MPIIO       8   read       13      1073741824    415.6862    427.1853
+ X_MPIIO       8   read       14      1073741824    427.1853    436.4853
+ X_MPIIO       8   read       15      1073741824    436.4853    445.2565
+
+# DXT, file_id: 13366175577126266022, file_name: /home/raditya/Feb12/project/testFile.00000009
+# DXT, rank: 9, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       9  write        0      1073741824      3.8910     16.5687
+ X_MPIIO       9  write        1      1073741824     16.5687     28.1515
+ X_MPIIO       9  write        2      1073741824     28.1515     37.6503
+ X_MPIIO       9  write        3      1073741824     37.6503     48.1937
+ X_MPIIO       9  write        4      1073741824     48.1937     59.5055
+ X_MPIIO       9  write        5      1073741824     59.5056     71.7069
+ X_MPIIO       9  write        6      1073741824     71.7069     83.9316
+ X_MPIIO       9  write        7      1073741824     83.9316     95.6161
+ X_MPIIO       9  write        8      1073741824     95.7333    103.7926
+ X_MPIIO       9  write        9      1073741824    103.7926    109.8052
+ X_MPIIO       9  write       10      1073741824    109.8052    115.3979
+ X_MPIIO       9  write       11      1073741824    115.3979    121.1537
+ X_MPIIO       9  write       12      1073741824    121.1538    125.9146
+ X_MPIIO       9  write       13      1073741824    125.9146    130.4206
+ X_MPIIO       9  write       14      1073741824    130.4206    134.2963
+ X_MPIIO       9  write       15      1073741824    134.2963    138.5125
+
+# DXT, file_id: 4890807750635903759, file_name: /home/raditya/Feb12/project/testFile.00000017
+# DXT, rank: 9, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO       9   read        0      1073741824    232.9832    246.1595
+ X_MPIIO       9   read        1      1073741824    246.1595    258.2149
+ X_MPIIO       9   read        2      1073741824    258.2149    271.2961
+ X_MPIIO       9   read        3      1073741824    271.4401    283.9729
+ X_MPIIO       9   read        4      1073741824    283.9729    296.6914
+ X_MPIIO       9   read        5      1073741824    296.6914    309.1385
+ X_MPIIO       9   read        6      1073741824    309.2721    321.0115
+ X_MPIIO       9   read        7      1073741824    321.0115    333.0612
+ X_MPIIO       9   read        8      1073741824    333.0612    345.8139
+ X_MPIIO       9   read        9      1073741824    346.0530    358.3149
+ X_MPIIO       9   read       10      1073741824    358.3149    370.5641
+ X_MPIIO       9   read       11      1073741824    370.5641    382.0496
+ X_MPIIO       9   read       12      1073741824    382.0496    392.8610
+ X_MPIIO       9   read       13      1073741824    392.8610    403.3412
+ X_MPIIO       9   read       14      1073741824    403.3412    413.8097
+ X_MPIIO       9   read       15      1073741824    413.8097    423.3311
+
+# DXT, file_id: 3153800783731232617, file_name: /home/raditya/Feb12/project/testFile.00000010
+# DXT, rank: 10, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      10  write        0      1073741824      3.9016     19.6086
+ X_MPIIO      10  write        1      1073741824     19.6087     44.8784
+ X_MPIIO      10  write        2      1073741824     44.8784     61.9819
+ X_MPIIO      10  write        3      1073741824     61.9819     76.6083
+ X_MPIIO      10  write        4      1073741824     76.6083     90.1032
+ X_MPIIO      10  write        5      1073741824     90.1032    108.0747
+ X_MPIIO      10  write        6      1073741824    108.0748    121.5552
+ X_MPIIO      10  write        7      1073741824    121.5552    149.1083
+ X_MPIIO      10  write        8      1073741824    149.1083    162.4128
+ X_MPIIO      10  write        9      1073741824    162.4128    171.0269
+ X_MPIIO      10  write       10      1073741824    171.0269    179.4565
+ X_MPIIO      10  write       11      1073741824    179.4565    192.0193
+ X_MPIIO      10  write       12      1073741824    192.0193    197.3751
+ X_MPIIO      10  write       13      1073741824    197.3751    200.5429
+ X_MPIIO      10  write       14      1073741824    200.5429    206.9767
+ X_MPIIO      10  write       15      1073741824    206.9767    210.8533
+
+# DXT, file_id: 8976206395720837126, file_name: /home/raditya/Feb12/project/testFile.00000018
+# DXT, rank: 10, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      10   read        0      1073741824    233.0107    244.9224
+ X_MPIIO      10   read        1      1073741824    244.9224    254.3080
+ X_MPIIO      10   read        2      1073741824    254.3080    263.8259
+ X_MPIIO      10   read        3      1073741824    263.8259    273.6558
+ X_MPIIO      10   read        4      1073741824    273.6558    283.3816
+ X_MPIIO      10   read        5      1073741824    283.3816    293.4312
+ X_MPIIO      10   read        6      1073741824    293.4312    302.7877
+ X_MPIIO      10   read        7      1073741824    302.7877    313.1318
+ X_MPIIO      10   read        8      1073741824    313.1319    322.8331
+ X_MPIIO      10   read        9      1073741824    322.8331    332.6187
+ X_MPIIO      10   read       10      1073741824    332.6187    342.0941
+ X_MPIIO      10   read       11      1073741824    342.0941    351.8246
+ X_MPIIO      10   read       12      1073741824    351.8246    361.4789
+ X_MPIIO      10   read       13      1073741824    361.4789    370.8723
+ X_MPIIO      10   read       14      1073741824    370.8723    380.6612
+ X_MPIIO      10   read       15      1073741824    380.6612    390.7028
+
+# DXT, file_id: 11225106729379473008, file_name: /home/raditya/Feb12/project/testFile.00000011
+# DXT, rank: 11, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      11  write        0      1073741824      3.9059     16.2250
+ X_MPIIO      11  write        1      1073741824     16.2250     27.5561
+ X_MPIIO      11  write        2      1073741824     27.5561     37.3288
+ X_MPIIO      11  write        3      1073741824     37.3288     48.0228
+ X_MPIIO      11  write        4      1073741824     48.0228     59.1490
+ X_MPIIO      11  write        5      1073741824     59.1490     71.3472
+ X_MPIIO      11  write        6      1073741824     71.3472     83.9796
+ X_MPIIO      11  write        7      1073741824     83.9796     95.5385
+ X_MPIIO      11  write        8      1073741824     95.5385    103.7642
+ X_MPIIO      11  write        9      1073741824    103.7642    109.7345
+ X_MPIIO      11  write       10      1073741824    109.7345    115.7733
+ X_MPIIO      11  write       11      1073741824    115.7733    121.7035
+ X_MPIIO      11  write       12      1073741824    121.7036    126.7343
+ X_MPIIO      11  write       13      1073741824    126.7343    131.0636
+ X_MPIIO      11  write       14      1073741824    131.0636    135.3584
+ X_MPIIO      11  write       15      1073741824    135.3584    139.0754
+
+# DXT, file_id: 4417402811538315834, file_name: /home/raditya/Feb12/project/testFile.00000019
+# DXT, rank: 11, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      11   read        0      1073741824    232.9574    247.5559
+ X_MPIIO      11   read        1      1073741824    247.5559    262.8251
+ X_MPIIO      11   read        2      1073741824    262.8251    278.7889
+ X_MPIIO      11   read        3      1073741824    278.7890    294.5150
+ X_MPIIO      11   read        4      1073741824    294.5150    310.0373
+ X_MPIIO      11   read        5      1073741824    310.0373    325.3148
+ X_MPIIO      11   read        6      1073741824    325.3148    340.7978
+ X_MPIIO      11   read        7      1073741824    340.7978    356.1505
+ X_MPIIO      11   read        8      1073741824    356.1505    372.5197
+ X_MPIIO      11   read        9      1073741824    372.5197    388.3390
+ X_MPIIO      11   read       10      1073741824    388.3390    404.6484
+ X_MPIIO      11   read       11      1073741824    404.6484    418.5581
+ X_MPIIO      11   read       12      1073741824    418.5581    432.5882
+ X_MPIIO      11   read       13      1073741824    432.5882    444.1678
+ X_MPIIO      11   read       14      1073741824    444.1678    452.8665
+ X_MPIIO      11   read       15      1073741824    452.8665    460.5050
+
+# DXT, file_id: 16752825045268591791, file_name: /home/raditya/Feb12/project/testFile.00000012
+# DXT, rank: 12, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      12  write        0      1073741824      3.9078     11.5961
+ X_MPIIO      12  write        1      1073741824     11.5961     19.1370
+ X_MPIIO      12  write        2      1073741824     19.1371     26.5556
+ X_MPIIO      12  write        3      1073741824     26.5556     40.9381
+ X_MPIIO      12  write        4      1073741824     40.9381     52.3573
+ X_MPIIO      12  write        5      1073741824     52.3574     59.1669
+ X_MPIIO      12  write        6      1073741824     59.1669     66.5730
+ X_MPIIO      12  write        7      1073741824     66.5730     73.9102
+ X_MPIIO      12  write        8      1073741824     74.0861     81.6473
+ X_MPIIO      12  write        9      1073741824     81.6473     89.5970
+ X_MPIIO      12  write       10      1073741824     89.5971     98.4655
+ X_MPIIO      12  write       11      1073741824     98.4655    107.0753
+ X_MPIIO      12  write       12      1073741824    107.0753    112.4841
+ X_MPIIO      12  write       13      1073741824    112.4841    117.7263
+ X_MPIIO      12  write       14      1073741824    117.7263    134.3301
+ X_MPIIO      12  write       15      1073741824    134.3301    145.1675
+
+# DXT, file_id: 12121164046966517267, file_name: /home/raditya/Feb12/project/testFile.00000020
+# DXT, rank: 12, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      12   read        0      1073741824    233.0105    250.5392
+ X_MPIIO      12   read        1      1073741824    250.5392    268.0710
+ X_MPIIO      12   read        2      1073741824    268.0710    285.3071
+ X_MPIIO      12   read        3      1073741824    285.3072    303.0025
+ X_MPIIO      12   read        4      1073741824    303.0025    320.7488
+ X_MPIIO      12   read        5      1073741824    320.7488    338.3966
+ X_MPIIO      12   read        6      1073741824    338.3967    354.7344
+ X_MPIIO      12   read        7      1073741824    354.7344    371.0269
+ X_MPIIO      12   read        8      1073741824    371.0269    387.1497
+ X_MPIIO      12   read        9      1073741824    387.1498    404.4796
+ X_MPIIO      12   read       10      1073741824    404.4796    421.8209
+ X_MPIIO      12   read       11      1073741824    421.8209    435.2126
+ X_MPIIO      12   read       12      1073741824    435.2417    446.2807
+ X_MPIIO      12   read       13      1073741824    446.2807    453.7016
+ X_MPIIO      12   read       14      1073741824    453.7016    460.8685
+ X_MPIIO      12   read       15      1073741824    460.8685    465.5584
+
+# DXT, file_id: 10015593471693893441, file_name: /home/raditya/Feb12/project/testFile.00000013
+# DXT, rank: 13, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      13  write        0      1073741824      3.9006     11.0320
+ X_MPIIO      13  write        1      1073741824     11.0321     17.6502
+ X_MPIIO      13  write        2      1073741824     17.6502     24.2600
+ X_MPIIO      13  write        3      1073741824     24.2600     29.8584
+ X_MPIIO      13  write        4      1073741824     29.8584     34.8743
+ X_MPIIO      13  write        5      1073741824     34.8743     40.5247
+ X_MPIIO      13  write        6      1073741824     40.5248     45.8072
+ X_MPIIO      13  write        7      1073741824     45.8072     52.3581
+ X_MPIIO      13  write        8      1073741824     52.3581     59.0177
+ X_MPIIO      13  write        9      1073741824     59.0177     66.0934
+ X_MPIIO      13  write       10      1073741824     66.0935     72.4709
+ X_MPIIO      13  write       11      1073741824     72.4709     78.9423
+ X_MPIIO      13  write       12      1073741824     78.9424     84.6510
+ X_MPIIO      13  write       13      1073741824     84.6510     90.8436
+ X_MPIIO      13  write       14      1073741824     90.8436     96.8480
+ X_MPIIO      13  write       15      1073741824     96.9229    101.1584
+
+# DXT, file_id: 8822507517204064785, file_name: /home/raditya/Feb12/project/testFile.00000021
+# DXT, rank: 13, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      13   read        0      1073741824    232.9570    251.8070
+ X_MPIIO      13   read        1      1073741824    251.8070    268.7637
+ X_MPIIO      13   read        2      1073741824    268.7637    285.8430
+ X_MPIIO      13   read        3      1073741824    285.8430    304.2390
+ X_MPIIO      13   read        4      1073741824    304.2390    322.2484
+ X_MPIIO      13   read        5      1073741824    322.2484    340.2526
+ X_MPIIO      13   read        6      1073741824    340.2526    357.9043
+ X_MPIIO      13   read        7      1073741824    357.9043    375.5610
+ X_MPIIO      13   read        8      1073741824    375.5610    393.2507
+ X_MPIIO      13   read        9      1073741824    393.2507    409.9716
+ X_MPIIO      13   read       10      1073741824    410.1175    426.1480
+ X_MPIIO      13   read       11      1073741824    426.1480    438.8867
+ X_MPIIO      13   read       12      1073741824    438.8867    450.6027
+ X_MPIIO      13   read       13      1073741824    450.7173    460.8653
+ X_MPIIO      13   read       14      1073741824    460.8653    469.0018
+ X_MPIIO      13   read       15      1073741824    469.0018    476.5587
+
+# DXT, file_id: 13704465515730605806, file_name: /home/raditya/Feb12/project/testFile.00000014
+# DXT, rank: 14, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      14  write        0      1073741824      3.8506     17.8561
+ X_MPIIO      14  write        1      1073741824     17.8562     38.8710
+ X_MPIIO      14  write        2      1073741824     38.8710     57.6372
+ X_MPIIO      14  write        3      1073741824     57.6372     71.5256
+ X_MPIIO      14  write        4      1073741824     71.5256     84.3811
+ X_MPIIO      14  write        5      1073741824     84.3811     99.2521
+ X_MPIIO      14  write        6      1073741824     99.2521    111.3539
+ X_MPIIO      14  write        7      1073741824    111.3539    125.3407
+ X_MPIIO      14  write        8      1073741824    125.3407    147.0816
+ X_MPIIO      14  write        9      1073741824    147.0816    157.1179
+ X_MPIIO      14  write       10      1073741824    157.1179    163.8385
+ X_MPIIO      14  write       11      1073741824    163.8385    169.8725
+ X_MPIIO      14  write       12      1073741824    169.8725    175.0838
+ X_MPIIO      14  write       13      1073741824    175.0838    180.8393
+ X_MPIIO      14  write       14      1073741824    180.8393    190.5428
+ X_MPIIO      14  write       15      1073741824    190.5428    195.5335
+
+# DXT, file_id: 3579769425525253113, file_name: /home/raditya/Feb12/project/testFile.00000022
+# DXT, rank: 14, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      14   read        0      1073741824    232.9572    246.4702
+ X_MPIIO      14   read        1      1073741824    246.4702    257.7248
+ X_MPIIO      14   read        2      1073741824    257.7248    268.9221
+ X_MPIIO      14   read        3      1073741824    268.9221    281.9328
+ X_MPIIO      14   read        4      1073741824    281.9329    293.7037
+ X_MPIIO      14   read        5      1073741824    293.7037    305.9853
+ X_MPIIO      14   read        6      1073741824    305.9853    317.9640
+ X_MPIIO      14   read        7      1073741824    317.9640    330.4262
+ X_MPIIO      14   read        8      1073741824    330.4262    343.0922
+ X_MPIIO      14   read        9      1073741824    343.0923    355.4081
+ X_MPIIO      14   read       10      1073741824    355.4081    367.3248
+ X_MPIIO      14   read       11      1073741824    367.3248    379.8947
+ X_MPIIO      14   read       12      1073741824    380.0632    392.5601
+ X_MPIIO      14   read       13      1073741824    392.5601    402.7468
+ X_MPIIO      14   read       14      1073741824    402.7468    413.5681
+ X_MPIIO      14   read       15      1073741824    413.5681    422.8885
+
+# DXT, file_id: 136429942037111526, file_name: /home/raditya/Feb12/project/testFile.00000015
+# DXT, rank: 15, hostname: cn270
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      15  write        0      1073741824      3.9011     10.8844
+ X_MPIIO      15  write        1      1073741824     10.8844     17.0370
+ X_MPIIO      15  write        2      1073741824     17.0371     23.7771
+ X_MPIIO      15  write        3      1073741824     23.7771     29.6450
+ X_MPIIO      15  write        4      1073741824     29.6906     34.2132
+ X_MPIIO      15  write        5      1073741824     34.2133     39.2488
+ X_MPIIO      15  write        6      1073741824     39.2488     44.2621
+ X_MPIIO      15  write        7      1073741824     44.2621     50.0010
+ X_MPIIO      15  write        8      1073741824     50.1028     56.1216
+ X_MPIIO      15  write        9      1073741824     56.1216     62.9596
+ X_MPIIO      15  write       10      1073741824     62.9596     69.0564
+ X_MPIIO      15  write       11      1073741824     69.0564     75.1290
+ X_MPIIO      15  write       12      1073741824     75.1290     81.3022
+ X_MPIIO      15  write       13      1073741824     81.3022     86.8733
+ X_MPIIO      15  write       14      1073741824     86.8733     92.8229
+ X_MPIIO      15  write       15      1073741824     92.8229     98.5619
+
+# DXT, file_id: 3310672820388311547, file_name: /home/raditya/Feb12/project/testFile.00000023
+# DXT, rank: 15, hostname: cn270
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      15   read        0      1073741824    232.9702    247.2490
+ X_MPIIO      15   read        1      1073741824    247.2490    260.3789
+ X_MPIIO      15   read        2      1073741824    260.3789    273.0820
+ X_MPIIO      15   read        3      1073741824    273.0820    285.3344
+ X_MPIIO      15   read        4      1073741824    285.3344    298.2678
+ X_MPIIO      15   read        5      1073741824    298.2678    311.1079
+ X_MPIIO      15   read        6      1073741824    311.1080    323.3695
+ X_MPIIO      15   read        7      1073741824    323.3695    335.4982
+ X_MPIIO      15   read        8      1073741824    335.4982    347.9574
+ X_MPIIO      15   read        9      1073741824    347.9575    360.4852
+ X_MPIIO      15   read       10      1073741824    360.4852    371.9878
+ X_MPIIO      15   read       11      1073741824    371.9878    384.9754
+ X_MPIIO      15   read       12      1073741824    384.9754    397.4972
+ X_MPIIO      15   read       13      1073741824    397.4973    409.4416
+ X_MPIIO      15   read       14      1073741824    409.4416    419.9911
+ X_MPIIO      15   read       15      1073741824    419.9911    429.5364
+
+# DXT, file_id: 1188025060045851439, file_name: /home/raditya/Feb12/project/testFile.00000016
+# DXT, rank: 16, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      16  write        0      1073741824      3.8718     12.0675
+ X_MPIIO      16  write        1      1073741824     12.0675     21.2138
+ X_MPIIO      16  write        2      1073741824     21.2138     28.7944
+ X_MPIIO      16  write        3      1073741824     28.7944     35.4460
+ X_MPIIO      16  write        4      1073741824     35.4460     42.8725
+ X_MPIIO      16  write        5      1073741824     42.8727     50.4200
+ X_MPIIO      16  write        6      1073741824     50.4200     59.6418
+ X_MPIIO      16  write        7      1073741824     59.6418     68.7873
+ X_MPIIO      16  write        8      1073741824     68.7873     77.0171
+ X_MPIIO      16  write        9      1073741824     77.0171     85.4406
+ X_MPIIO      16  write       10      1073741824     85.4406     92.2254
+ X_MPIIO      16  write       11      1073741824     92.2254     98.5450
+ X_MPIIO      16  write       12      1073741824     98.5450    104.2458
+ X_MPIIO      16  write       13      1073741824    104.3248    110.2975
+ X_MPIIO      16  write       14      1073741824    110.2976    116.5826
+ X_MPIIO      16  write       15      1073741824    116.7240    121.0830
+
+# DXT, file_id: 6617333809683356553, file_name: /home/raditya/Feb12/project/testFile.00000000
+# DXT, rank: 16, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      16   read        0      1073741824    232.9569    254.5954
+ X_MPIIO      16   read        1      1073741824    254.5954    275.4311
+ X_MPIIO      16   read        2      1073741824    275.4311    295.8679
+ X_MPIIO      16   read        3      1073741824    295.8679    316.7563
+ X_MPIIO      16   read        4      1073741824    316.7563    338.1070
+ X_MPIIO      16   read        5      1073741824    338.1070    359.8011
+ X_MPIIO      16   read        6      1073741824    359.8011    381.2419
+ X_MPIIO      16   read        7      1073741824    381.2419    402.2682
+ X_MPIIO      16   read        8      1073741824    402.2682    421.9664
+ X_MPIIO      16   read        9      1073741824    421.9664    438.9021
+ X_MPIIO      16   read       10      1073741824    438.9021    457.0281
+ X_MPIIO      16   read       11      1073741824    457.0281    474.8984
+ X_MPIIO      16   read       12      1073741824    474.8984    489.2176
+ X_MPIIO      16   read       13      1073741824    489.2176    502.1924
+ X_MPIIO      16   read       14      1073741824    502.1924    511.4785
+ X_MPIIO      16   read       15      1073741824    511.4785    518.8509
+
+# DXT, file_id: 4890807750635903759, file_name: /home/raditya/Feb12/project/testFile.00000017
+# DXT, rank: 17, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      17  write        0      1073741824      3.8725     11.3398
+ X_MPIIO      17  write        1      1073741824     11.3398     21.1882
+ X_MPIIO      17  write        2      1073741824     21.1882     29.3773
+ X_MPIIO      17  write        3      1073741824     29.3773     38.3436
+ X_MPIIO      17  write        4      1073741824     38.3436     47.5688
+ X_MPIIO      17  write        5      1073741824     47.5688     55.7669
+ X_MPIIO      17  write        6      1073741824     55.7669     64.6127
+ X_MPIIO      17  write        7      1073741824     64.6127     73.3310
+ X_MPIIO      17  write        8      1073741824     73.3310     81.8946
+ X_MPIIO      17  write        9      1073741824     81.8946     90.2799
+ X_MPIIO      17  write       10      1073741824     90.4596     98.8344
+ X_MPIIO      17  write       11      1073741824     98.8344    104.9536
+ X_MPIIO      17  write       12      1073741824    104.9537    110.3794
+ X_MPIIO      17  write       13      1073741824    110.3794    115.8657
+ X_MPIIO      17  write       14      1073741824    115.8657    121.0480
+ X_MPIIO      17  write       15      1073741824    121.0480    125.3996
+
+# DXT, file_id: 4485515842888025625, file_name: /home/raditya/Feb12/project/testFile.00000001
+# DXT, rank: 17, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      17   read        0      1073741824    232.9571    245.1924
+ X_MPIIO      17   read        1      1073741824    245.1925    257.5960
+ X_MPIIO      17   read        2      1073741824    257.5960    270.3290
+ X_MPIIO      17   read        3      1073741824    270.3290    282.8740
+ X_MPIIO      17   read        4      1073741824    282.8740    295.3671
+ X_MPIIO      17   read        5      1073741824    295.3671    309.7988
+ X_MPIIO      17   read        6      1073741824    309.7988    322.6745
+ X_MPIIO      17   read        7      1073741824    322.6745    336.0928
+ X_MPIIO      17   read        8      1073741824    336.0928    348.2426
+ X_MPIIO      17   read        9      1073741824    348.2426    361.8310
+ X_MPIIO      17   read       10      1073741824    361.8310    374.1967
+ X_MPIIO      17   read       11      1073741824    374.1967    387.5022
+ X_MPIIO      17   read       12      1073741824    387.5022    399.9968
+ X_MPIIO      17   read       13      1073741824    399.9968    412.4513
+ X_MPIIO      17   read       14      1073741824    412.4513    422.4826
+ X_MPIIO      17   read       15      1073741824    422.4826    432.1503
+
+# DXT, file_id: 8976206395720837126, file_name: /home/raditya/Feb12/project/testFile.00000018
+# DXT, rank: 18, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      18  write        0      1073741824      3.8630      8.1730
+ X_MPIIO      18  write        1      1073741824      8.1730     12.8257
+ X_MPIIO      18  write        2      1073741824     12.8257     18.4821
+ X_MPIIO      18  write        3      1073741824     18.4821     24.2069
+ X_MPIIO      18  write        4      1073741824     24.2069     28.9295
+ X_MPIIO      18  write        5      1073741824     29.2460     34.4866
+ X_MPIIO      18  write        6      1073741824     34.4866     40.2324
+ X_MPIIO      18  write        7      1073741824     40.2324     44.6053
+ X_MPIIO      18  write        8      1073741824     44.6053     49.8179
+ X_MPIIO      18  write        9      1073741824     49.8179     54.2490
+ X_MPIIO      18  write       10      1073741824     54.2490     59.3440
+ X_MPIIO      18  write       11      1073741824     59.3440     64.5788
+ X_MPIIO      18  write       12      1073741824     64.5788     69.5644
+ X_MPIIO      18  write       13      1073741824     69.5644     75.5568
+ X_MPIIO      18  write       14      1073741824     75.5568     80.2996
+ X_MPIIO      18  write       15      1073741824     80.2996     85.4418
+
+# DXT, file_id: 2239383483592625774, file_name: /home/raditya/Feb12/project/testFile.00000002
+# DXT, rank: 18, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      18   read        0      1073741824    232.9574    252.9649
+ X_MPIIO      18   read        1      1073741824    252.9649    273.3464
+ X_MPIIO      18   read        2      1073741824    273.3464    293.3955
+ X_MPIIO      18   read        3      1073741824    293.3955    313.4932
+ X_MPIIO      18   read        4      1073741824    313.4932    332.9202
+ X_MPIIO      18   read        5      1073741824    332.9202    351.7839
+ X_MPIIO      18   read        6      1073741824    351.7839    370.9259
+ X_MPIIO      18   read        7      1073741824    370.9259    391.1775
+ X_MPIIO      18   read        8      1073741824    391.1775    410.4031
+ X_MPIIO      18   read        9      1073741824    410.4031    428.0614
+ X_MPIIO      18   read       10      1073741824    428.0614    445.3781
+ X_MPIIO      18   read       11      1073741824    445.3781    464.5845
+ X_MPIIO      18   read       12      1073741824    464.5846    480.7966
+ X_MPIIO      18   read       13      1073741824    480.7966    495.1073
+ X_MPIIO      18   read       14      1073741824    495.1073    506.9827
+ X_MPIIO      18   read       15      1073741824    506.9827    515.8937
+
+# DXT, file_id: 4417402811538315834, file_name: /home/raditya/Feb12/project/testFile.00000019
+# DXT, rank: 19, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      19  write        0      1073741824      3.8782     19.5046
+ X_MPIIO      19  write        1      1073741824     19.5046     32.5875
+ X_MPIIO      19  write        2      1073741824     32.5875     44.6609
+ X_MPIIO      19  write        3      1073741824     44.6609     59.9998
+ X_MPIIO      19  write        4      1073741824     59.9998     75.2481
+ X_MPIIO      19  write        5      1073741824     75.2481     89.3637
+ X_MPIIO      19  write        6      1073741824     89.3637    100.1505
+ X_MPIIO      19  write        7      1073741824    100.1506    110.0882
+ X_MPIIO      19  write        8      1073741824    110.0883    119.5414
+ X_MPIIO      19  write        9      1073741824    119.5414    125.2985
+ X_MPIIO      19  write       10      1073741824    125.2985    131.9215
+ X_MPIIO      19  write       11      1073741824    131.9573    136.8733
+ X_MPIIO      19  write       12      1073741824    136.8733    143.2512
+ X_MPIIO      19  write       13      1073741824    143.2512    148.2470
+ X_MPIIO      19  write       14      1073741824    148.2470    153.2306
+ X_MPIIO      19  write       15      1073741824    153.2306    157.3807
+
+# DXT, file_id: 11030528003214951808, file_name: /home/raditya/Feb12/project/testFile.00000003
+# DXT, rank: 19, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      19   read        0      1073741824    232.9577    246.9265
+ X_MPIIO      19   read        1      1073741824    246.9265    258.1316
+ X_MPIIO      19   read        2      1073741824    258.1316    269.4782
+ X_MPIIO      19   read        3      1073741824    269.4782    279.6535
+ X_MPIIO      19   read        4      1073741824    279.6535    290.2213
+ X_MPIIO      19   read        5      1073741824    290.2213    301.5582
+ X_MPIIO      19   read        6      1073741824    301.5582    312.5783
+ X_MPIIO      19   read        7      1073741824    312.5784    324.0348
+ X_MPIIO      19   read        8      1073741824    324.0348    335.2697
+ X_MPIIO      19   read        9      1073741824    335.2697    346.2378
+ X_MPIIO      19   read       10      1073741824    346.2378    356.9924
+ X_MPIIO      19   read       11      1073741824    356.9924    367.7425
+ X_MPIIO      19   read       12      1073741824    367.7425    378.2958
+ X_MPIIO      19   read       13      1073741824    378.2958    389.5019
+ X_MPIIO      19   read       14      1073741824    389.5019    399.8181
+ X_MPIIO      19   read       15      1073741824    399.8181    410.7945
+
+# DXT, file_id: 12121164046966517267, file_name: /home/raditya/Feb12/project/testFile.00000020
+# DXT, rank: 20, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      20  write        0      1073741824      3.9003     22.1276
+ X_MPIIO      20  write        1      1073741824     22.1277     35.9683
+ X_MPIIO      20  write        2      1073741824     35.9683     50.7141
+ X_MPIIO      20  write        3      1073741824     50.7141     68.8718
+ X_MPIIO      20  write        4      1073741824     68.8718     85.6934
+ X_MPIIO      20  write        5      1073741824     85.6934     98.8141
+ X_MPIIO      20  write        6      1073741824     98.8141    108.5921
+ X_MPIIO      20  write        7      1073741824    108.5921    119.1694
+ X_MPIIO      20  write        8      1073741824    119.1694    125.9073
+ X_MPIIO      20  write        9      1073741824    125.9073    134.5081
+ X_MPIIO      20  write       10      1073741824    134.5081    143.1443
+ X_MPIIO      20  write       11      1073741824    143.1770    150.6175
+ X_MPIIO      20  write       12      1073741824    150.7207    157.4200
+ X_MPIIO      20  write       13      1073741824    157.4327    160.4473
+ X_MPIIO      20  write       14      1073741824    160.4473    163.3260
+ X_MPIIO      20  write       15      1073741824    163.3260    165.8720
+
+# DXT, file_id: 4594336861342540954, file_name: /home/raditya/Feb12/project/testFile.00000004
+# DXT, rank: 20, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      20   read        0      1073741824    232.9584    247.5917
+ X_MPIIO      20   read        1      1073741824    247.5917    260.5754
+ X_MPIIO      20   read        2      1073741824    260.5754    273.5824
+ X_MPIIO      20   read        3      1073741824    273.5824    287.3235
+ X_MPIIO      20   read        4      1073741824    287.3235    300.3858
+ X_MPIIO      20   read        5      1073741824    300.3858    313.7371
+ X_MPIIO      20   read        6      1073741824    313.7371    326.6661
+ X_MPIIO      20   read        7      1073741824    326.6661    339.5771
+ X_MPIIO      20   read        8      1073741824    339.5771    352.2677
+ X_MPIIO      20   read        9      1073741824    352.2677    365.1858
+ X_MPIIO      20   read       10      1073741824    365.1859    377.3626
+ X_MPIIO      20   read       11      1073741824    377.3626    389.8796
+ X_MPIIO      20   read       12      1073741824    389.8796    402.6866
+ X_MPIIO      20   read       13      1073741824    402.6866    415.0580
+ X_MPIIO      20   read       14      1073741824    415.0580    423.7527
+ X_MPIIO      20   read       15      1073741824    423.7527    430.2558
+
+# DXT, file_id: 8822507517204064785, file_name: /home/raditya/Feb12/project/testFile.00000021
+# DXT, rank: 21, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      21  write        0      1073741824      3.8569     12.8873
+ X_MPIIO      21  write        1      1073741824     12.8873     23.0503
+ X_MPIIO      21  write        2      1073741824     23.0503     38.4241
+ X_MPIIO      21  write        3      1073741824     38.4241     52.8120
+ X_MPIIO      21  write        4      1073741824     52.8120     62.7592
+ X_MPIIO      21  write        5      1073741824     62.7592     72.3471
+ X_MPIIO      21  write        6      1073741824     72.6819     81.3684
+ X_MPIIO      21  write        7      1073741824     81.3684     89.7657
+ X_MPIIO      21  write        8      1073741824     89.7657    101.5212
+ X_MPIIO      21  write        9      1073741824    101.5212    110.1304
+ X_MPIIO      21  write       10      1073741824    110.1304    118.8514
+ X_MPIIO      21  write       11      1073741824    118.8514    136.8357
+ X_MPIIO      21  write       12      1073741824    136.8357    146.5758
+ X_MPIIO      21  write       13      1073741824    146.5758    151.6639
+ X_MPIIO      21  write       14      1073741824    151.6639    158.3096
+ X_MPIIO      21  write       15      1073741824    158.3096    162.8087
+
+# DXT, file_id: 8291793450924322731, file_name: /home/raditya/Feb12/project/testFile.00000005
+# DXT, rank: 21, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      21   read        0      1073741824    232.9582    253.7185
+ X_MPIIO      21   read        1      1073741824    253.7185    273.5898
+ X_MPIIO      21   read        2      1073741824    273.5898    292.6219
+ X_MPIIO      21   read        3      1073741824    292.6219    312.4777
+ X_MPIIO      21   read        4      1073741824    312.4777    332.6245
+ X_MPIIO      21   read        5      1073741824    332.6245    352.6536
+ X_MPIIO      21   read        6      1073741824    352.6536    372.5681
+ X_MPIIO      21   read        7      1073741824    372.5681    392.5911
+ X_MPIIO      21   read        8      1073741824    392.5911    411.9878
+ X_MPIIO      21   read        9      1073741824    411.9879    430.8838
+ X_MPIIO      21   read       10      1073741824    430.8838    450.1138
+ X_MPIIO      21   read       11      1073741824    450.1138    467.7159
+ X_MPIIO      21   read       12      1073741824    467.7159    484.3271
+ X_MPIIO      21   read       13      1073741824    484.3271    498.3671
+ X_MPIIO      21   read       14      1073741824    498.3671    508.9468
+ X_MPIIO      21   read       15      1073741824    508.9468    517.2903
+
+# DXT, file_id: 3579769425525253113, file_name: /home/raditya/Feb12/project/testFile.00000022
+# DXT, rank: 22, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      22  write        0      1073741824      3.8516     13.4396
+ X_MPIIO      22  write        1      1073741824     13.4396     24.6022
+ X_MPIIO      22  write        2      1073741824     24.6023     35.0633
+ X_MPIIO      22  write        3      1073741824     35.0633     45.7202
+ X_MPIIO      22  write        4      1073741824     45.7202     55.3603
+ X_MPIIO      22  write        5      1073741824     55.3603     65.4808
+ X_MPIIO      22  write        6      1073741824     65.4808     75.5544
+ X_MPIIO      22  write        7      1073741824     75.5544     85.7281
+ X_MPIIO      22  write        8      1073741824     85.7281     93.6232
+ X_MPIIO      22  write        9      1073741824     93.6232    102.0818
+ X_MPIIO      22  write       10      1073741824    102.0818    107.7253
+ X_MPIIO      22  write       11      1073741824    107.7254    113.2350
+ X_MPIIO      22  write       12      1073741824    113.2350    118.8045
+ X_MPIIO      22  write       13      1073741824    118.8045    124.1022
+ X_MPIIO      22  write       14      1073741824    124.1465    127.1591
+ X_MPIIO      22  write       15      1073741824    127.1591    129.4734
+
+# DXT, file_id: 13500644276017873973, file_name: /home/raditya/Feb12/project/testFile.00000006
+# DXT, rank: 22, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      22   read        0      1073741824    232.9579    247.6351
+ X_MPIIO      22   read        1      1073741824    247.6351    260.2157
+ X_MPIIO      22   read        2      1073741824    260.2157    273.0119
+ X_MPIIO      22   read        3      1073741824    273.0119    285.5537
+ X_MPIIO      22   read        4      1073741824    285.5537    298.5600
+ X_MPIIO      22   read        5      1073741824    298.5600    311.0034
+ X_MPIIO      22   read        6      1073741824    311.0034    324.2938
+ X_MPIIO      22   read        7      1073741824    324.2938    337.5178
+ X_MPIIO      22   read        8      1073741824    337.5178    350.8445
+ X_MPIIO      22   read        9      1073741824    350.8445    363.4468
+ X_MPIIO      22   read       10      1073741824    363.4468    376.4681
+ X_MPIIO      22   read       11      1073741824    376.4681    389.0238
+ X_MPIIO      22   read       12      1073741824    389.0238    401.1593
+ X_MPIIO      22   read       13      1073741824    401.1593    413.1563
+ X_MPIIO      22   read       14      1073741824    413.1563    424.3033
+ X_MPIIO      22   read       15      1073741824    424.3033    432.7862
+
+# DXT, file_id: 3310672820388311547, file_name: /home/raditya/Feb12/project/testFile.00000023
+# DXT, rank: 23, hostname: cn351
+# DXT, write_count: 16, read_count: 0
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      23  write        0      1073741824      3.8549     11.9998
+ X_MPIIO      23  write        1      1073741824     11.9999     21.0252
+ X_MPIIO      23  write        2      1073741824     21.0252     29.2685
+ X_MPIIO      23  write        3      1073741824     29.2685     35.1377
+ X_MPIIO      23  write        4      1073741824     35.1377     42.4419
+ X_MPIIO      23  write        5      1073741824     42.4419     49.5550
+ X_MPIIO      23  write        6      1073741824     49.7604     58.3923
+ X_MPIIO      23  write        7      1073741824     58.3924     67.3486
+ X_MPIIO      23  write        8      1073741824     67.3486     75.4488
+ X_MPIIO      23  write        9      1073741824     75.4488     83.5104
+ X_MPIIO      23  write       10      1073741824     83.5104     90.3559
+ X_MPIIO      23  write       11      1073741824     90.4579     96.5464
+ X_MPIIO      23  write       12      1073741824     96.5464    101.0035
+ X_MPIIO      23  write       13      1073741824    101.0035    105.6217
+ X_MPIIO      23  write       14      1073741824    105.6217    111.0160
+ X_MPIIO      23  write       15      1073741824    111.0160    116.9094
+
+# DXT, file_id: 13901290699237556864, file_name: /home/raditya/Feb12/project/testFile.00000007
+# DXT, rank: 23, hostname: cn351
+# DXT, write_count: 0, read_count: 16
+# DXT, mnt_pt: /home, fs_type: lustre
+# Module    Rank  Wt/Rd  Segment       Length    Start(s)      End(s)
+ X_MPIIO      23   read        0      1073741824    232.9581    245.6430
+ X_MPIIO      23   read        1      1073741824    245.6430    256.6925
+ X_MPIIO      23   read        2      1073741824    256.6925    268.2406
+ X_MPIIO      23   read        3      1073741824    268.2406    279.7846
+ X_MPIIO      23   read        4      1073741824    279.7846    291.6045
+ X_MPIIO      23   read        5      1073741824    291.6045    303.1533
+ X_MPIIO      23   read        6      1073741824    303.1533    314.7078
+ X_MPIIO      23   read        7      1073741824    314.7079    325.9519
+ X_MPIIO      23   read        8      1073741824    325.9519    337.0452
+ X_MPIIO      23   read        9      1073741824    337.0452    348.3712
+ X_MPIIO      23   read       10      1073741824    348.3712    359.7170
+ X_MPIIO      23   read       11      1073741824    359.7170    370.3863
+ X_MPIIO      23   read       12      1073741824    370.3863    381.8209
+ X_MPIIO      23   read       13      1073741824    381.8209    392.9459
+ X_MPIIO      23   read       14      1073741824    392.9460    404.1912
+ X_MPIIO      23   read       15      1073741824    404.1912    414.8593

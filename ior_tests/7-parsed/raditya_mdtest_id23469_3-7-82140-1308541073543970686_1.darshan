@@ -1,0 +1,144 @@
+# darshan log version: 3.10
+# compression method: ZLIB
+# exe: ./src/mdtest -a POSIX -W 2 -d /dev/shm/mdest -V=4
+# uid: 5501
+# jobid: 23469
+# start_time: 1551979140
+# start_time_asci: Thu Mar  7 22:49:00 2019
+# end_time: 1551979140
+# end_time_asci: Thu Mar  7 22:49:00 2019
+# nprocs: 2
+# run time: 1
+# metadata: lib_ver = 3.1.7
+# metadata: h = romio_no_indep_rw=true;cb_nodes=4
+
+# log file regions
+# -------------------------------------------------------
+# header: 360 bytes (uncompressed)
+# job data: 568 bytes (compressed)
+# record table: 55 bytes (compressed)
+# STDIO module: 69 bytes (compressed), ver=2
+
+# mounted file systems (mount point and fs type)
+# -------------------------------------------------------
+# mount entry:	/snap/gnome-system-monitor/36	squashfs
+# mount entry:	/snap/gnome-system-monitor/57	squashfs
+# mount entry:	/snap/gtk-common-themes/1122	squashfs
+# mount entry:	/snap/gtk-common-themes/1198	squashfs
+# mount entry:	/snap/gtk-common-themes/818	squashfs
+# mount entry:	/snap/gnome-calculator/154	squashfs
+# mount entry:	/snap/gnome-calculator/260	squashfs
+# mount entry:	/snap/gnome-characters/139	squashfs
+# mount entry:	/snap/gnome-characters/69	squashfs
+# mount entry:	/sys/kernel/debug/tracing	tracefs
+# mount entry:	/proc/sys/fs/binfmt_misc	autofs
+# mount entry:	/snap/gnome-3-26-1604/78	squashfs
+# mount entry:	/snap/gnome-3-26-1604/74	squashfs
+# mount entry:	/snap/gnome-3-26-1604/82	squashfs
+# mount entry:	/sys/fs/cgroup/unified	cgroup2
+# mount entry:	/snap/sublime-text/38	squashfs
+# mount entry:	/snap/sublime-text/44	squashfs
+# mount entry:	/snap/gnome-logs/25	squashfs
+# mount entry:	/snap/gnome-logs/45	squashfs
+# mount entry:	/run/user/5649/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/5722/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/6066/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/6452/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/5675/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/6464/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/6317/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/5666/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/6467/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/5288/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/6451/gvfs	fuse.gvfsd-fuse
+# mount entry:	/run/user/5701/gvfs	fuse.gvfsd-fuse
+# mount entry:	/sys/kernel/config	configfs
+# mount entry:	/snap/chromium/566	squashfs
+# mount entry:	/snap/chromium/595	squashfs
+# mount entry:	/snap/chromium/621	squashfs
+# mount entry:	/run/user/128/gvfs	fuse.gvfsd-fuse
+# mount entry:	/snap/core18/719	squashfs
+# mount entry:	/snap/core18/677	squashfs
+# mount entry:	/snap/core18/731	squashfs
+# mount entry:	/snap/core/6350	squashfs
+# mount entry:	/snap/core/6405	squashfs
+# mount entry:	/snap/core/6259	squashfs
+# mount entry:	/sys/fs/pstore	pstore
+# mount entry:	/users/faculty	nfs
+# mount entry:	/users/btech	nfs
+# mount entry:	/users/mtech	nfs
+# mount entry:	/dev/mqueue	mqueue
+# mount entry:	/users/misc	nfs
+# mount entry:	/users/mti	nfs
+# mount entry:	/users	autofs
+# mount entry:	/boot	ext4
+# mount entry:	/home	ext4
+# mount entry:	/misc	autofs
+# mount entry:	/dev	devtmpfs
+# mount entry:	/tmp	ext4
+# mount entry:	/var	ext4
+# mount entry:	/	ext4
+
+# description of columns:
+#   <module>: module responsible for this I/O record.
+#   <rank>: MPI rank.  -1 indicates that the file is shared
+#      across all processes and statistics are aggregated.
+#   <record id>: hash of the record's file path
+#   <counter name> and <counter value>: statistical counters.
+#      A value of -1 indicates that Darshan could not monitor
+#      that counter, and its value should be ignored.
+#   <file name>: full file path for the record.
+#   <mount pt>: mount point that the file resides on.
+#   <fs type>: type of file system that the file resides on.
+
+# *******************************************************
+# STDIO module data
+# *******************************************************
+
+# description of STDIO counters:
+#   STDIO_{OPENS|FDOPENS|WRITES|READS|SEEKS|FLUSHES} are types of operations.
+#   STDIO_BYTES_*: total bytes read and written.
+#   STDIO_MAX_BYTE_*: highest offset byte read and written.
+#   STDIO_*_RANK: rank of the processes that were the fastest and slowest at I/O (for shared files).
+#   STDIO_*_RANK_BYTES: bytes transferred by the fastest and slowest ranks (for shared files).
+#   STDIO_F_*_START_TIMESTAMP: timestamp of the first call to that type of function.
+#   STDIO_F_*_END_TIMESTAMP: timestamp of the completion of the last call to that type of function.
+#   STDIO_F_*_TIME: cumulative time spent in different types of functions.
+#   STDIO_F_*_RANK_TIME: fastest and slowest I/O time for a single rank (for shared files).
+#   STDIO_F_VARIANCE_RANK_*: variance of total I/O time and bytes moved for all ranks (for shared files).
+
+# WARNING: STDIO_OPENS counter includes STDIO_FDOPENS count
+
+# WARNING: STDIO counters related to file offsets may be incorrect if a file is simultaneously accessed by both STDIO and POSIX (e.g., using fdopen())
+# 	- Affected counters include: MAX_BYTE_{READ|WRITTEN}
+
+#<module>	<rank>	<record id>	<counter>	<value>	<file name>	<mount pt>	<fs type>
+STDIO	-1	15920181672442173319	STDIO_OPENS	2	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_FDOPENS	0	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_READS	0	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_WRITES	24	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_SEEKS	0	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_FLUSHES	75	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_BYTES_WRITTEN	899	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_BYTES_READ	0	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_MAX_BYTE_READ	0	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_MAX_BYTE_WRITTEN	898	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_FASTEST_RANK	1	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_FASTEST_RANK_BYTES	0	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_SLOWEST_RANK	0	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_SLOWEST_RANK_BYTES	899	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_META_TIME	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_WRITE_TIME	0.000018	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_READ_TIME	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_OPEN_START_TIMESTAMP	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_CLOSE_START_TIMESTAMP	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_WRITE_START_TIMESTAMP	0.002784	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_READ_START_TIMESTAMP	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_OPEN_END_TIMESTAMP	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_CLOSE_END_TIMESTAMP	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_WRITE_END_TIMESTAMP	0.003050	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_READ_END_TIMESTAMP	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_FASTEST_RANK_TIME	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_SLOWEST_RANK_TIME	0.000018	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_VARIANCE_RANK_TIME	0.000000	<STDOUT>	UNKNOWN	UNKNOWN
+STDIO	-1	15920181672442173319	STDIO_F_VARIANCE_RANK_BYTES	202050.250000	<STDOUT>	UNKNOWN	UNKNOWN

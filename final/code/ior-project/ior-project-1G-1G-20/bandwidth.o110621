@@ -1,0 +1,49 @@
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Fri Apr 19 20:16:52 IST 2019
+IOR-3.2.0: MPI Coordinated Test of Parallel I/O
+Began               : Fri Apr 19 20:16:52 2019
+Command line        : /home/raditya/Feb12/ior-master/src/ior -t 512m -b 512m -s 16 -F -C -c -a=MPIIO
+Machine             : Linux cn347
+TestID              : 0
+StartTime           : Fri Apr 19 20:16:52 2019
+Path                : /home/raditya/Feb12/ior-project
+FS                  : 57.4 TiB   Used FS: 30.8%   Inodes: 230.7 Mi   Used Inodes: 2.5%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.0)
+test filename       : testFile
+access              : file-per-process
+type                : collective
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 16
+clients per node    : 8
+repetitions         : 1
+xfersize            : 512 MiB
+blocksize           : 512 MiB
+aggregate filesize  : 128 GiB
+
+Results: 
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+write     1616.33    524288     524288     0.037150   81.09      50.07      81.09      0   
+read      1130.19    524288     524288     0.070261   115.97     50.50      115.97     0   
+remove    -          -          -          -          -          -          0.004487   0   
+Max Write: 1616.33 MiB/sec (1694.84 MB/sec)
+Max Read:  1130.19 MiB/sec (1185.09 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1616.33    1616.33    1616.33       0.00       3.16       3.16       3.16       0.00   81.09254     0     16   8    1   1     1        1         0    0     16 536870912 536870912  131072.0 MPIIO      0
+read         1130.19    1130.19    1130.19       0.00       2.21       2.21       2.21       0.00  115.97374     0     16   8    1   1     1        1         0    0     16 536870912 536870912  131072.0 MPIIO      0
+Finished            : Fri Apr 19 20:20:10 2019
+Fri Apr 19 20:20:12 IST 2019

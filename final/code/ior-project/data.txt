@@ -1,0 +1,23 @@
+
+Read
+cn098,cn353 : 1151.97 MB/sec
+cn062,cn131 : 1303.23 MB/sec
+cn161,cn183 : 1402.20 MB/sec
+cn029,cn161 : 942.62 MB/sec
+cn107,cn138 : 1035.60 MB/sec
+cn003,cn352 : 1399.39 MB/sec
+cn138,cn161 : 1353.62 MB/sec
+cn153,cn344 : 1419.17 MB/sec
+cn161,cn164 : 894.72 MB/sec
+
+
+Write
+cn098,cn353 : 1163.70 MB/sec
+cn062,cn131 : 1694.97 MB/sec
+cn161,cn183 : 1777.69 MB/sec
+cn029,cn161 : 1099.42 MB/sec
+cn107,cn138 : 858.04 MB/sec
+cn003,cn352 : 2280.27 MB/sec
+cn138,cn161 : 1818.27 MB/sec
+cn153,cn344 : 2438.43 MB/sec
+cn161,cn164 : 1350.75 MB/sec

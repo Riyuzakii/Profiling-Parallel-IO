@@ -1,0 +1,184 @@
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Inspector XE 2015 (build 379161)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) VTune(TM) Amplifier XE 2015 (build 393444)
+Copyright (C) 2009-2014 Intel Corporation. All rights reserved.
+Intel(R) Advisor XE 2015 (build 380555)
+Mon Apr 22 16:01:44 IST 2019
+IOR-3.2.0: MPI Coordinated Test of Parallel I/O
+Began               : Mon Apr 22 16:05:51 2019
+Command line        : /home/raditya/Feb12/ior-master/src/ior -t 64k -b 128m -s 16 -F -C -c -a=MPIIO
+Machine             : Linux cn105
+TestID              : 0
+StartTime           : Mon Apr 22 16:05:51 2019
+Path                : /home/raditya/Feb12/ior-project
+FS                  : 57.4 TiB   Used FS: 30.8%   Inodes: 230.7 Mi   Used Inodes: 2.5%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.0)
+test filename       : testFile
+access              : file-per-process
+type                : collective
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 16
+clients per node    : 8
+repetitions         : 1
+xfersize            : 65536 bytes
+blocksize           : 128 MiB
+aggregate filesize  : 32 GiB
+
+Results: 
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+write     1313.07    131072     64.00      0.010034   24.95      8.53       24.96      0   
+read      1263.72    131072     64.00      0.081259   25.93      9.45       25.93      0   
+remove    -          -          -          -          -          -          0.005486   0   
+Max Write: 1313.07 MiB/sec (1376.85 MB/sec)
+Max Read:  1263.72 MiB/sec (1325.11 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1313.07    1313.07    1313.07       0.00   21009.08   21009.08   21009.08       0.00   24.95530     0     16   8    1   1     1        1         0    0     16 134217728    65536   32768.0 MPIIO      0
+read         1263.72    1263.72    1263.72       0.00   20219.55   20219.55   20219.55       0.00   25.92975     0     16   8    1   1     1        1         0    0     16 134217728    65536   32768.0 MPIIO      0
+Finished            : Mon Apr 22 16:06:42 2019
+IOR-3.2.0: MPI Coordinated Test of Parallel I/O
+Began               : Mon Apr 22 16:06:45 2019
+Command line        : /home/raditya/Feb12/ior-master/src/ior -t 256k -b 128m -s 16 -F -C -c -a=MPIIO
+Machine             : Linux cn105
+TestID              : 0
+StartTime           : Mon Apr 22 16:06:45 2019
+Path                : /home/raditya/Feb12/ior-project
+FS                  : 57.4 TiB   Used FS: 30.9%   Inodes: 230.7 Mi   Used Inodes: 2.5%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.0)
+test filename       : testFile
+access              : file-per-process
+type                : collective
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 16
+clients per node    : 8
+repetitions         : 1
+xfersize            : 262144 bytes
+blocksize           : 128 MiB
+aggregate filesize  : 32 GiB
+
+Results: 
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+write     1784.95    131072     256.00     0.003150   18.36      4.86       18.36      0   
+read      1279.09    131072     256.00     0.057763   25.62      15.65      25.62      0   
+remove    -          -          -          -          -          -          0.005768   0   
+Max Write: 1784.95 MiB/sec (1871.66 MB/sec)
+Max Read:  1279.09 MiB/sec (1341.22 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1784.95    1784.95    1784.95       0.00    7139.80    7139.80    7139.80       0.00   18.35793     0     16   8    1   1     1        1         0    0     16 134217728   262144   32768.0 MPIIO      0
+read         1279.09    1279.09    1279.09       0.00    5116.34    5116.34    5116.34       0.00   25.61829     0     16   8    1   1     1        1         0    0     16 134217728   262144   32768.0 MPIIO      0
+Finished            : Mon Apr 22 16:07:29 2019
+IOR-3.2.0: MPI Coordinated Test of Parallel I/O
+Began               : Mon Apr 22 16:07:31 2019
+Command line        : /home/raditya/Feb12/ior-master/src/ior -t 1m -b 128m -s 16 -F -C -c -a=MPIIO
+Machine             : Linux cn105
+TestID              : 0
+StartTime           : Mon Apr 22 16:07:31 2019
+Path                : /home/raditya/Feb12/ior-project
+FS                  : 57.4 TiB   Used FS: 30.9%   Inodes: 230.7 Mi   Used Inodes: 2.5%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.0)
+test filename       : testFile
+access              : file-per-process
+type                : collective
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 16
+clients per node    : 8
+repetitions         : 1
+xfersize            : 1 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 32 GiB
+
+Results: 
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+write     1793.03    131072     1024.00    0.005263   18.27      8.33       18.28      0   
+read      1408.18    131072     1024.00    0.063394   23.27      9.78       23.27      0   
+remove    -          -          -          -          -          -          0.003808   0   
+Max Write: 1793.03 MiB/sec (1880.13 MB/sec)
+Max Read:  1408.18 MiB/sec (1476.59 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1793.03    1793.03    1793.03       0.00    1793.03    1793.03    1793.03       0.00   18.27523     0     16   8    1   1     1        1         0    0     16 134217728  1048576   32768.0 MPIIO      0
+read         1408.18    1408.18    1408.18       0.00    1408.18    1408.18    1408.18       0.00   23.26970     0     16   8    1   1     1        1         0    0     16 134217728  1048576   32768.0 MPIIO      0
+Finished            : Mon Apr 22 16:08:13 2019
+IOR-3.2.0: MPI Coordinated Test of Parallel I/O
+Began               : Mon Apr 22 16:08:16 2019
+Command line        : /home/raditya/Feb12/ior-master/src/ior -t 4m -b 128m -s 16 -F -C -c -a=MPIIO
+Machine             : Linux cn105
+TestID              : 0
+StartTime           : Mon Apr 22 16:08:16 2019
+Path                : /home/raditya/Feb12/ior-project
+FS                  : 57.4 TiB   Used FS: 30.9%   Inodes: 230.7 Mi   Used Inodes: 2.5%
+
+Options: 
+api                 : MPIIO
+apiVersion          : (3.0)
+test filename       : testFile
+access              : file-per-process
+type                : collective
+segments            : 16
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 16
+clients per node    : 8
+repetitions         : 1
+xfersize            : 4 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 32 GiB
+
+Results: 
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 34359738368.
+WARNING: Stat() of aggregate file size      = 34245136384.
+WARNING: Using actual aggregate bytes moved = 34359738368.
+write     1748.85    131072     4096       0.023658   18.74      9.92       18.74      0   
+WARNING: Expected aggregate file size       = 34359738368.
+WARNING: Stat() of aggregate file size      = 34245136384.
+WARNING: Using actual aggregate bytes moved = 34359738368.
+read      1408.87    131072     4096       0.134957   23.26      8.59       23.26      0   
+remove    -          -          -          -          -          -          0.004478   0   
+Max Write: 1748.85 MiB/sec (1833.80 MB/sec)
+Max Read:  1408.87 MiB/sec (1477.31 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        1748.85    1748.85    1748.85       0.00     437.21     437.21     437.21       0.00   18.73689     0     16   8    1   1     1        1         0    0     16 134217728  4194304   32768.0 MPIIO      0
+read         1408.87    1408.87    1408.87       0.00     352.22     352.22     352.22       0.00   23.25830     0     16   8    1   1     1        1         0    0     16 134217728  4194304   32768.0 MPIIO      0
+Finished            : Mon Apr 22 16:08:58 2019
+Mon Apr 22 16:04:56 IST 2019

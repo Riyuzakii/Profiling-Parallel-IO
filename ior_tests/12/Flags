@@ -1,0 +1,86 @@
+Flags
+  -B                            useO_DIRECT -- uses O_DIRECT for POSIX, bypassing I/O buffers
+  -c                            collective -- collective I/O
+  -C                            reorderTasks -- changes task ordering to n+1 ordering for readback
+  -e                            fsync -- perform sync operation after each block write
+  -E                            useExistingTestFile -- do not remove test file before write access
+  -F                            filePerProc -- file-per-process
+  -g                            intraTestBarriers -- use barriers between open, write/read, and close
+  -H                            showHints -- show hints
+  -I                            individualDataSets -- datasets not shared by all procs [not working]
+  -k                            keepFile -- don't remove the test file(s) on program exit
+  -K                            keepFileWithError  -- keep error-filled file(s) after data-checking
+  -m                            multiFile -- use number of reps (-i) for multiple file count
+  -n                            noFill -- no fill in HDF5 file creation
+  -p                            preallocate -- preallocate file size
+  -P                            useSharedFilePointer -- use shared file pointer [not working]
+  -q                            quitOnError -- during file error-checking, abort on error
+  -r                            readFile -- read existing file
+  -R                            checkRead -- verify that the output of read matches the expected signature (used with -G)
+  -S                            useStridedDatatype -- put strided access into datatype [not working]
+  -u                            uniqueDir -- use unique directory name for each file-per-process
+  -v                            verbose -- output information (repeating flag increases level)
+  -V                            useFileView -- use MPI_File_set_view
+  -w                            writeFile -- write file
+  -W                            checkWrite -- check read after write
+  -x                            singleXferAttempt -- do not retry transfer if incomplete
+  -Y                            fsyncPerWrite -- perform sync operation after every write operation
+  -z                            randomOffset -- access is to random, not sequential, offsets within a file
+  -Z                            reorderTasksRandom -- changes task ordering to random ordering for readback
+  --dryRun                      do not perform any I/Os just run evtl. inputs print dummy output
+
+Optional arguments
+  -a=POSIX                      API for I/O [POSIX|DUMMY|MPIIO|MMAP]
+  -A=0                          refNum -- user supplied reference number to include in the summary
+  -b=1048576                    blockSize -- contiguous bytes to write per task  (e.g.: 8, 4k, 2m, 1g)
+  -d=0                          interTestDelay -- delay between reps in seconds
+  -D=0                          deadlineForStonewalling -- seconds before stopping write or read phase
+  -O stoneWallingWearOut=1           -- once the stonewalling timout is over, all process finish to access the amount of data
+  -O stoneWallingWearOutIterations=N -- stop after processing this number of iterations, needed for reading data back written with stoneWallingWearOut
+  -O stoneWallingStatusFile=FILE     -- this file keeps the number of iterations from stonewalling during write and allows to use them for read
+  -f=STRING                     scriptFile -- test script name
+  -G=0                          setTimeStampSignature -- set value for time stamp signature/random seed
+  -i=1                          repetitions -- number of repetitions of test
+  -j=0                          outlierThreshold -- warn on outlier N seconds from mean
+  -J=1                          setAlignment -- HDF5 alignment in bytes (e.g.: 8, 4k, 2m, 1g)
+  -l=STRING                     datapacket type-- type of packet that will be created [offset|incompressible|timestamp|o|i|t]
+  -M=STRING                     memoryPerNode -- hog memory on the node  (e.g.: 2g, 75%)
+  -N=0                          numTasks -- number of tasks that should participate in the test
+  -o=testFile                   testFile -- full name for test
+  -O=STRING                     string of IOR directives (e.g. -O checkRead=1,lustreStripeCount=32)
+  -Q=1                          taskPerNodeOffset for read tests use with -C & -Z options (-C constant N, -Z at least N)
+  -s=1                          segmentCount -- number of segments
+  -t=262144                     transferSize -- size of transfer in bytes (e.g.: 8, 4k, 2m, 1g)
+  -T=0                          maxTimeDuration -- max time in minutes executing repeated test; it aborts only between iterations and not within a test!
+  -U=STRING                     hintsFileName -- full name for hints file
+  -X=0                          reorderTasksRandomSeed -- random seed for -Z option
+  -O summaryFile=FILE                 -- store result data into this file
+  -O summaryFormat=[default,JSON,CSV] -- use the format for outputing the summary
+
+
+Module DUMMY
+
+Flags
+  --dummy.delay-only-rank0      Delay only Rank0
+
+Optional arguments
+  --dummy.delay-create=0        Delay per create in usec
+  --dummy.delay-xfer=0          Delay per xfer in usec
+
+
+python -c 'print "A"*(2**30)' > ~/project/filename.txt
+
+~/project/ior/src/ior -w -r -o ~/project/filename.txt
+
+  -c                            collective -- collective I/O
+  -e                            fsync -- perform sync operation after each block write
+  -H                            showHints -- show hints
+  -k                            keepFile -- don't remove the test file(s) on program exit
+  -v                            verbose -- output information (repeating flag increases level)
+  -V                            useFileView -- use MPI_File_set_view
+  -a=POSIX                      API for I/O [POSIX|DUMMY|MPIIO|MMAP]
+  -b=1048576                    blockSize -- contiguous bytes to write per task  (e.g.: 8, 4k, 2m, 1g)
+  -N=0                          numTasks -- number of tasks that should participate in the test
+
+~/project/ior/src/ior -c -H -k -v -a=POSIX -w -r -o ~/project/filename.txt
+~/project/ior/src/ior -c -H -k -v -a=MPIIO -w -r -o ~/project/filename.txt
