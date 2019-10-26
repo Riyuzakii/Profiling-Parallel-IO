@@ -11,12 +11,13 @@ Most of the plotting was for sparsely located data from the log-files and were d
 
 All findings(including interesting ones) about the DXT overheads are mentioned in the final/report.pdf in detail.
 
-Inside final/ directory**, 
+Inside final/ directory**,
+ 
 | __Filename__ | __Details__ |
 |-------------|------------|
-| report.pdf			| Latex report |
+| report.pdf		| Latex report |
 | final.pdf			| Presentation Slides |
-| readme				| this file |
+| readme			| this file |
 | report/ 			| images and plots for the report |
 | code/dxt/	 		| log-files and data for the DXT overhead experiments |
 | code/ior-analyse/	| read/write latency analysis (most of it was done prior to midsem progress presentation) |
